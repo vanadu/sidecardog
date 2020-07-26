@@ -182,14 +182,11 @@
       /* VA! Header */
       img.headerstars { width: 412px !important; height: 20px !important; }
       td.headerstripe { width: 60px !important; height: 18px !important; }
-      table.headertextwrapper { width: 292px !important; }
+      td.headertextwrapper { width: 272px !important; }
       td.headertext { font-size: 32px !important; line-height: 32px !important;}
       td.headertopspacing { height: 12px !important; }
-      /* VA! SUBHEAD */
-      td.subtext { font-size: 20px !important; line-height: 22px !important; padding: 5px 5px !important; }
-      img.baseball { width: 25px !important; height: 25px !important; }
-      span.subtext-pop { font-size: 24px !important; }
-      td.subheadspacing { height: 4px !important; }
+      /* VA! /Header */
+
 
     }
 
@@ -212,15 +209,11 @@
       /* sps */
       /* VA! Header */
       img.headerstars { width: 320px !important; height: 15px !important; }
-      td.headerstripe { width: 30px !important; height: 15px !important; }
+      td.headerstripes { width: 30px !important; height: 15px !important; }
       table.headertextwrapper { width: 260px !important; }
       td.headertext { font-size: 30px !important; line-height: 30px !important;}
       td.headertopspacing { height: 7px !important; }
-      /* VA! SUBHEAD */
-      td.subtext { font-size: 16px !important; line-height: 18px !important; padding: 5px 0 !important;}
-      img.baseball { width: 20px !important; height: 20px !important; }
-      span.subtext-pop { font-size: 18px !important; vertical-align: -1px;}
-      td.subheadspacing { height: 3px !important; }
+      /* VA! /Header */
     }
   </style>
 </head>
@@ -235,97 +228,94 @@
             <tr>
               <td align="center" valign="top" style="border-left: 1px solid #959595; border-right: 1px solid #959595;">
 
+                <!-- VA! NOTE: Spent a lot of time today trying to structure the header to remove the mystery space in Outlook 2016 Desktop that appears to the right of the rightmost TD to the left of the table border. See the Sidecar Dog email log under Outlook 2016 mystery space -->
                 <!-- HEADER WRAPPER-->
                 <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
                   <tr>
-                    <td valign="top" align="left">
+                    <td width="100%" valign="middle" align="left">
                       <!-- Header Stars Top -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tr>
-                          <td valign="top" align="left">
-                            <img class="headerstars" src="img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0">
+                          <!-- VA! Add the background color #314F6E here to compensate for the mystery space to the right of the rightmost table cell in Outlook 2016 desktop app -->
+                          <td valign="middle" align="left" bgcolor="#314F6E">
+                            <img align="middle" class="headerstars" src="img/white-star-bar.png" style="display: block; width: 600px; height: 30px; border: none; outline: none;" width="600" height="30" border="0">
                           </td>
                         </tr>
                       </table>
-                      <!-- Header Content Wrap -->
+                    </td>
+                  </tr>
+                  <!-- Header Content Wrap -->
+                  <tr>
+                    <td width="100%" valign="middle" align="left">
                       <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tr>
-                          <td valign="top" align="left">
-
-                            <!-- Header Stripes Left -->
-                            <table class="headerstripes" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left">
+                          <td class="headerstripeswidth" width="90" valign="top" align="left">
+                            <!-- VA! Header Stripes Left -->
+                            <table width="100%"role="presentation" cellspacing="0" cellpadding="0" border="0"  align="center">
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
+                                <td height="18" bgcolor="#D24152" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#FFFFFF" align="left">
-                                </td>
+                                <td height="18" bgcolor="#FFFFFF" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
+                                <td height="18" bgcolor="#D24152" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#FFFFFF" align="left">
-                                </td>
+                                <td height="18" bgcolor="#FFFFFF" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
+                                <td height="18" bgcolor="#D24152" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- Header Content -->
+                          <td class="headertextwrapper" width="416" valign="top" align="center">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="right">
+                              <!-- Spacing -->
+                              <tr>
+                                <td height="7" class="headertopspacing" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                              </tr>
+                              <!-- Spacing -->
+                              <tr>
+                                <td class="headertext" valign="top" align="left" style="font-family: 'Roboto', Arial, sans-serif; font-size: 38px; color: #222222; font-weight: 900; mso-line-height-rule: exactly; line-height: 38px; text-transform: uppercase; text-align: center; padding:  0; margin: 0">sidecar dog tour&nbsp;2022
                                 </td>
                               </tr>
                             </table>
-                            
-                            <!-- Header Content -->
-                            <table class="headertextwrapper" role="presentation" width="416" cellspacing="0" cellpadding="0" border="0" align="left">
-                              <tr>
-                                <td valign="top" align="left">
-                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="right">
-                                    <!-- Spacing -->
-                                    <tr>
-                                      <td height="7" class="headertopspacing" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                    </tr>
-                                    <!-- Spacing -->
-                                    <tr>
-                                      <td class="headertext" valign="top" align="left" style="font-family: 'Roboto', Arial, sans-serif; font-size: 38px; color: #222222; font-weight: 900; mso-line-height-rule: exactly; line-height: 38px; text-transform: uppercase; text-align: center; padding:  0; margin: 0">sidecar dog tour&nbsp;2022
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
+                          </td>
+                            <!-- VA! Header Stripes Left -->
+                          <td class="headerstripes" width="90" valign="top" align="right">
 
-                            <!-- Header Stripes Right -->
-                            <table class="headerstripes" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right">
+                            <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" >
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
+                                <td height="18" bgcolor="#D24152" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#FFFFFF" align="left">
-                                </td>
+                                <td height="18" bgcolor="#FFFFFF" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
+                                <td height="18" bgcolor="#D24152" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#FFFFFF" align="left">
-                                </td>
+                                <td height="18" bgcolor="#FFFFFF" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
+                                <td height="18" bgcolor="#D24152" align="center" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                             </table>
                           </td>
                         </tr>
                       </table>
-                      <!-- Header Stars Bottom -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+                    </td>
+                  </tr>
+                  <!-- Header Stars Bottom -->
+                  <tr>
+                    <td width="100%" valign="middle" align="left">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tr>
-                          <td valign="top" align="left">
-                            <img class="headerstars" src="img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0">
+                          <!-- VA! Add the background color #314F6E here to compensate for the mystery space to the right of the rightmost table cell in Outlook 2016 desktop app -->
+                          <td valign="middle" align="left" bgcolor="#314F6E">
+                            <img align="middle" class="headerstars" src="img/white-star-bar.png" style="display: block; width: 600px; height: 30px; border: none; outline: none;" width="600" height="30" border="0">
                           </td>
                         </tr>
                       </table>
@@ -333,100 +323,6 @@
                   </tr>
                 </table>
                 <!-- /HEADER WRAPPER -->
-
-                <!-- HERO WRAPPER-->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                  <tr>
-                    <td valign="top" align="left">
-                      <a href="#"><img class="hide" alt="" width="600" height="237" src="img/bo-ben.png" border="0" style="width: 600px; height: 237px; margin: 0; border: none; outline: none; text-decoration: none; display: block; "></a>
-                      <!-- VA! MS Conditional Block for Mobile Image -->
-                      <!--[if !mso]><!-->
-                      <span style="width:0; overflow:hidden; float:left; display:none; max-height:0; line-height:0;" class="mobileshow">
-                      <a href="#"><img class="mobileshow" alt="" width="320" height="126" src="img/bo-ben_mob.png" border="0" style="width: 320px; height: 126px; margin: 0; border: none; outline: none; text-decoration: none; display: block;" /></a>
-                      <!--</span>-->
-                      <!--<![endif]-->
-                    </td>
-                  </tr>
-                </table>
-                <!-- /HERO  -->
-
-                <!-- SUBHEAD WRAPPER-->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                  <!-- RED BAR -->
-                  <tr>
-                    <td width="100%" valign="middle" height="10" bgcolor="#D24152" align="left">
-                    </td>
-                  </tr>
-                  <!-- SUBHEAD CONTENT -->
-                  <tr>
-                    <td valign="top" align="left">
-                      <!-- SUBHEAD CONTENT WRAPPER -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="10" class="subheadspacing" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <!-- SUBHEAD Left-->
-                          <td width="23%" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td class="subtext" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px;color: #D24152;">48</span> States!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- SUBHEAD BULLET 1-->
-                          <td valign="middle" align="center">
-                            <a href="#"><img class="baseball" src="img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
-                          </td>
-                          <!-- SUBHEAD Center-->
-                          <td width="34%" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td class="subtext" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px; color: #D24152; ">30</span> Ballparks!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- SUBHEAD BULLET 2 -->
-                          <td valign="middle" align="center">
-                            <a href="#"><img class="baseball" src="img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
-                          </td>
-                          <!-- SUBHEAD Right-->
-                          <td width="27%" class="subhead" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td valign="top" class="subtext" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px;color: #D24152; ">30,000</span> Miles!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="7" class="subheadspacing" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                      </table>
-                    </td>
-                  </tr>
-                  <!-- BLUE BAR -->
-                  <tr>
-                    <td width="100%" valign="top" height="10" bgcolor="#314F6E" align="center">
-                    </td>
-                  </tr>
-                  
-                </table>
-                <!-- /SUBHEAD WRAPPER-->
 
               </td>
             </tr>
