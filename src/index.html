@@ -178,14 +178,21 @@
       /* ----- Template -------*/
 
       /* Default large phone device width: */
-      .devicewidth { width: 414px !important; align: center !important; align: center !important;}
+      .devicewidth { width: 412px !important; align: center !important; align: center !important;}
       /* Default large phone inner device width: */
-      .devicewidthinner { width: 394px !important;}
+      .devicewidthinner { width: 392px !important;}
       /* The .mobileshow class ensures that the mobile image swap image displays at the default Large Phones width of 414px. */
-      img.mobileshow { width: 414px !important; height: auto !important; }
+      img.mobileshow { width: 412px !important; height: auto !important; }
+
+      td.mobspac1 { height: 25px !important;}
+      td.mobspac2 { height: 25px !important; }
 
       /* lps */
       /* VA! DOGVENTURE */
+      img.img-gif { width: 280px !important; height: 186px !important; }
+      td.map-bg { width: auto !important; height: 440px !important;}
+      td.dogventuretext { font-size: 36px !important; line-height: 40px !important;}
+      td.barks { font-size: 22px !important; line-height: 28px !important; } 
 
 
     }
@@ -199,25 +206,28 @@
 
       /* VA! Small Phone Styles */
       /* Default small phone device width: */
-      table.devicewidth { width: 320px !important; align: center !important; text-align: center !important;}
+      table.devicewidth { width: 318px !important; align: center !important; text-align: center !important;}
       /* Default small Phone inner device width: */
-      table.devicewidthinner { width: 300px !important; }
+      table.devicewidthinner { width: 298px !important; }
 
       /* The .mobileshow ensures that the mobile image swap image displays at the default Small Phones width of 320px. */
-      img.mobileshow { width: 320px !important; height: auto !important; }
+      img.mobileshow { width: 318px !important; height: auto !important; }
+      td.mobspac1 { height: 17px !important;}
+      td.mobspac2 { height: 25px !important; }
 
       /* sps */
       /* VA! DOGVENTURE */
-
-
-
+      img.img-gif { width: 220px !important; height: 146px !important; }
+      td.map-bg { width: 507px !important; height: 355px !important;}
+      td.dogventuretext { font-size: 28px !important; line-height: 32px !important;}
+      td.barks { font-size: 18px !important; line-height: 22px !important; } 
     }
   </style>
 </head>
 
   <body>
 
-    <table class="fullgmail" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" style="min-width: 602px;">
+    <table class="fullgmail" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" style="min-width: 600px;">
       <tr>
         <td align="center" valign="top">
           <!-- VA! The Content Parent table can't have devicewidth applied. That might have ramifications... -->
@@ -229,66 +239,85 @@
               <td align="center" valign="top">
 
                 <!-- CONTENT -->
-
-                <!-- DOGVENTURE -->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#484848" align="center">
-                  <tr>
-                    <td width="600" valign="top" height="420" bgcolor="#484848" background="img/map-bg.png">
-                      <!--[if gte mso 9]>
-                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:420px;">
-                      <v:fill type="tile" src="img/map-bg.png" color="#484848" />
-                      <v:textbox inset="0,0,0,0">
-                      <![endif]-->
-                      <div>
-                      
-                      <!-- FOREGROUND CONTENT WRAPPER -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="40" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td valign="top" align="center">
-                            <a href="#"><img class="img-gif" alt="The Great Dogventure" src="img/bo.gif" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="280" height="186" border="0"></a>
-                          </td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td valign="top" align="center">
-
-                            <table class="dogventuretext" role="presentation" width="500" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td class="dogventure" width="100%" valign="top" align="center" style="display: block; margin: 0 auto; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 46px; line-height: 48px; color: #D24152; font-weight: 900; text-align: center; text-transform: uppercase; padding: 15px 0 0 10px; ">
-                                  The Great Dogventure
-                                </td>
-                              </tr>
-                              <tr>
-                              <td class="barks" width="100%" valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 32px; line-height: 38px; color: #FFFFFF; font-weight: bold; text-align: center; text-transform: uppercase; margin: 0; padding: 20px 0">
-                                Bikes, Barks and Ballparks Across America
+                  <!-- DOGVENTURE -->
+                  <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#484848" align="center">
+                    <tr>
+                      <td class="map-bg" width="600" valign="top" height="460" bgcolor="#484848" background="img/map-bg.png">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:420px;">
+                        <v:fill type="tile" src="img/map-bg.png" color="#484848" />
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+                        <div>
+                        
+                          <!-- FOREGROUND CONTENT WRAPPER -->
+                          <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <!-- Spacing -->
+                            <tr>
+                              <td class="mobspac2" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                            </tr>
+                            <!-- Spacing -->
+                            <tr>
+                              <td valign="top" align="center">
+                                <a href="#"><img class="img-gif" alt="The Great Dogventure" src="img/bo.gif" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="280" height="186" border="0"></a>
                               </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
+                            </tr>
+                            <tr>
+                              <td valign="top" align="center">
+                                <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                  <!-- Spacing -->
+                                  <tr>
+                                    <td class="mobspac2" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                  </tr>
+                                  <!-- Spacing -->
+                                  <table class="devicewidthinner" role="presentation" width="500" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tr>
+                                      <td class="dogventuretext" width="100%" valign="top" align="center" style="display: block; margin: 0 auto; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 46px; line-height: 48px; color: #D24152; font-weight: 900; text-align: center; text-transform: uppercase; ">
+                                        The Great Dogventure
+                                      </td>
+                                    </tr>
+                                    <!-- Spacing -->
+                                    <tr>
+                                      <td class="mobspac1" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                    </tr>
+                                    <!-- Spacing -->
+                                    <tr>
+                                      <td class="barks" width="100%" valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; line-height: 34px; color: #FFFFFF; font-weight: bold; text-align: center; text-transform: uppercase; margin: 0;">
+                                        Bikes, Barks and Ballparks Across America!
+                                      </td>
+                                    </tr>
+                                    <!-- Spacing -->
+                                    <tr>
+                                      <td class="mobspac2" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                    </tr>
+                                    <!-- Spacing -->
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <!--[if gte mso 9]>
+                          </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /DOGVENTURE -->
 
-                      </table>
-
-
-                      </div>
-                      <!--[if gte mso 9]>
-                        </v:textbox>
-                      </v:rect>
-                      <![endif]-->
-                    </td>
-                  </tr>
-                </table>
-                <!-- /DOGVENTURE -->
-
+                  <!-- DIVIDER -->
+                  <table width="600" cellpadding="0" cellspacing="0" role="presentation" border="0" align="center" class="devicewidth">
+                    <tr>
+                      <td class="redstripe" bgcolor="#D24152" height="4" width="100%" style="font-size: 1px; line-height: 1px; color: #D24152; mso-line-height-rule: exactly;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="whitestripe" height="4" bgcolor="#FFFFFF" style="font-size: 1px; line-height: 1px; color: #FFFFFF; mso-line-height-rule: exactly;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="redstripe" height="4" bgcolor="#D24152" style="font-size: 1px; line-height: 1px; color: #D24152; mso-line-height-rule: exactly;">&nbsp;</td>
+                    </tr>
+                  </table>
+                  <!-- /DIVIDER -->  
 
                 <!-- /CONTENT  -->
               </td>
