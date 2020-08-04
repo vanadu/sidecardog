@@ -1,0 +1,593 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <title>NY-LA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Cerberus: Use the latest (edge) version of IE rendering engine -->
+  <meta name="x-apple-disable-message-reformatting">  <!-- Cerberus: Disable auto-scale in iOS 10 Mail entirely -->
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Cerberus: Tell iOS not to automatically link certain text strings. -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"><!-- VA! Use Roboto -->
+  <title></title> <!-- Cerbrerus: The title tag shows in email notifications, like Android 4.4. -->
+  <!-- VA! Below is needed to ensure PNGs don't scale at 120dpi display in Outlook on Windows -->
+  <!--[if gte mso 7]><xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <!-- VA! The below is required to ensure Outlook falls back to the proper font instead of defaulting to Times Roman. Include class="fallback-font" in wherever you use a web font -->
+  <!--[if mso]>
+  <style type=”text/css”>
+  .fallback-font {
+  font-family: Arial, sans-serif;
+  }
+  </style>
+  <![endif]-->
+
+  <style type="text/css">
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: #ffffff !important;
+    }
+    strong {
+      font-weight: bold !important;
+    }
+    em {
+      font-style: italic !important;
+    }
+    td {
+      -webkit-text-size-adjust:none;
+      mso-line-height-rule: exactly;
+    }
+    a[href^=tel] {
+      color: inherit;
+      text-decoration: none;
+    }
+    .nolinkcolor a {
+      color:#425563 !important;
+      text-decoration: none !important;
+    }
+    table, td {
+      border-collapse:collapse !important;
+      mso-table-lspace:0pt !important;
+      mso-table-rspace:0pt !important;
+    }
+
+    /* Desktop / Large Tablet Styles */
+    @media screen and (max-width: 600px) {
+      /* !VA I am not sure what the fullgmail style does. Inclined to delete it */
+      *.full {
+        width:100% !important;
+      }
+      *.fullgmail {
+        width: 100% !important;
+        min-width:100% !important;
+      }
+      /* !VA Mobile swap style, applied to the span tag that is read by Outlook, and also to the img tag. I don't know why it's applied to both - This was in the old template I inherited and have been using for years  */
+      *.mobileshow {
+        display:block !important;
+        width: auto !important;
+        overflow: visible !important;
+        float: none !important;
+        max-height: none !important;
+        line-height: normal !important;
+      }
+      /* !VA Can';t
+      /* *.tbloutlook1 {
+        width:100% !important;
+      } */
+      *.tbloutlook2 {
+        width:100% !important;
+      }
+      *.hide {
+        display: none !important;
+      }
+      *.show {
+        display: block !important;
+      }
+      *.imgresize1 {
+        width:100% !important;
+        height:auto !important;
+      }
+      *.imgresize3 {
+        width:100% !important;
+        height:auto !important;
+      }
+
+    }
+    /* End of Synthroid Email Styles */
+
+    /* SDEmail Styles */
+    .devred {border: 1px solid red !important}
+    .devblu {border: 1px solid blue !important; }
+    .devmag {border: 1px solid magenta !important; }
+    span.pop-red {
+      color: #D24152;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    span.pop-blue {
+      color: #314F6E;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+
+
+    /* Client-specific Styles */
+    #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+    body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+    .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+    /* !VA Include the .ExternalClass declarations on separate lines because I don't know whether Outlook.com respects single-line, comma-separated declarations: */
+    .ExternalClass, 
+    .ExternalClass p, 
+    .ExternalClass span, 
+    .ExternalClass font, 
+    .ExternalClass td, 
+    .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing. This does the same as */
+    /* !VA I don't know what  */
+    #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+    /* From HTML Boilerplate, explained here: https://webdesign.tutsplus.com/articles/say-hello-to-the-html-email-boilerplate--webdesign-5143 */
+    img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+    a img {border:none;}
+    .image_fix {display:block;}
+    /* !VA Also from HTML Boilerplate - cancel all margins so that they must be set inline. This is a Yahoo-specific instruction but whether it's still relevant is anyone's guess. */
+    p {margin: 0px 0px !important;}
+    /* VA! Outlook-specific, gets rid of some default padding */
+    table td {border-collapse: collapse;}
+    table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+    /* VA! Set the default link color */
+    a {color: #33b9ff;text-decoration: none;}
+    /*STYLES*/
+    /* VA! Clear any floats and set the full-width top-level parent table to 100% width */
+    table.full { width: 100%; clear: both; }
+
+
+    /*DEV STYLES*/
+    /* !VA Uncomment this to make TD gutters visible for dev */
+     /* .gutterleft, .gutterright { border: 1px solid red !important;} */ */
+
+    .dvgrn {border: 1px solid green }
+    .dvred {border: 1px solid red}
+    .dvblu {border: 1px solid blue }
+
+      /* Was img-max */
+      /* LITMUS Style */
+      .img-fluid {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .responsive-table {
+          width: 100% !important;
+      }
+
+      span.pop-red {
+        color: #D24152;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      span.pop-blue {
+        color: #314F6E;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      /* End LITMUS Style */
+
+    /* Large Phone Styles - Targeting iPhone 11, XR, 6 Plus, 6S Plus, 7 Plus, 8 Plus i.e. 414px logical resolution to 599px */
+    @media only screen and (max-width: 599px) {
+
+      a[href^="tel"], a[href^="sms"] { color: #0a8cce; /* or whatever your want */ pointer-events: none; cursor: default; }
+
+      .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0a8cce !important; pointer-events: auto; cursor: default; }
+
+      /* ----- Template -------*/
+
+      /* Default large phone device width: */
+      .devicewidth { width: 412px !important; align: center !important; align: center !important;}
+      /* Default large phone inner device width: */
+      .devicewidthinner { width: 372px !important;}
+      /* The .mobileshow class ensures that the mobile image swap image displays at the default Large Phones width of 414px. */
+      img.mobileshow { width: 412px !important; height: auto !important; }
+      .wrapper {
+          width: 100% !important;
+        	max-width: 100% !important;
+      }
+
+
+
+      /* lps */
+      td.mobspac1 { height: 25px !important;}
+      td.mobspac2 { height: 25px !important; }
+      td.mobspac0 { height: 0 !important;}
+      td.mobspac3 { height: 7px !important;}
+
+      /* NY-LA */
+      div.pos-switch { max-width: 100% !important;}
+      img.rtl-img {width: 371px !important; height: 247px !important;}
+      td.pos-switch-heading { font-size: 21px !important; }
+      td.pos-switch-text { font-size: 19px !important; line-height: 23px !important; } 
+      /* /NY-LA */
+
+
+    }
+
+      /* Small Phone Styles - Targeting most Samsung and smaller iPhone devices, i.e. smallest devices up to 413px logical resolution */
+      @media only screen and (max-width: 413px) {
+      /* !VA Phone number, mobile link styling */
+      a[href^="tel"], a[href^="sms"] { text-decoration: none; color: #0a8cce; pointer-events: none; cursor: default; }
+      /* !VA Phone number, mobile link styling */
+      .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0a8cce !important; pointer-events: auto; cursor: default; }
+
+      /* VA! Small Phone Styles */
+      /* Default small phone device width: */
+      table.devicewidth { width: 318px !important; align: center !important; text-align: center !important;}
+      /* Default small Phone inner device width: */
+      table.devicewidthinner { width: 298px !important; }
+
+      /* The .mobileshow ensures that the mobile image swap image displays at the default Small Phones width of 320px. */
+      img.mobileshow { width: 318px !important; height: auto !important; }
+      td.mobspac1 { height: 17px !important;}
+      td.mobspac2 { height: 25px !important; }
+      td.mobspac0 { height: 0 !important;}
+      td.mobspac3 { height: 10px !important;}
+
+      /* sps */
+      /* NY-LA */
+      div.pos-switch { max-width: 100% !important;}
+      img.rtl-img {width: 300px !important; height: 200px !important;}
+      td.pos-switch-heading { font-size: 19px !important; }
+      td.pos-switch-text { font-size: 17px !important; line-height: 20px !important; } 
+      /* /NY-LA */
+
+
+
+
+
+
+    }
+  </style>
+</head>
+
+  <body>
+
+    <table class="fullgmail" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" style="min-width: 602px;">
+      <tr>
+        <td align="center" valign="top">
+          <!-- VA! The Content Parent table can't have devicewidth applied. That might have ramifications... -->
+
+          <!-- Legacy Start --> 
+          <!-- VA! This is just for the border - check to see if it's OK to put it on the master table, or even if the master table is needed. -->
+          <table class="devicewidth" width="602" align="center" bgcolor="#FFFFFF" border="0" role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 auto;" >
+            <tr>
+              <td align="center" valign="top" style="border-left: 1px solid #959595; border-right: 1px solid #959595;">
+
+                <!-- CONTENT -->
+                <!-- RED-WHITE DIVIDER -->
+                <table width="600" cellpadding="0" cellspacing="0" role="presentation" border="0" align="center" class="devicewidth">
+                  <tr>
+                    <td class="redstripe" bgcolor="#D24152" height="4" width="100%" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="whitestripe" height="4" bgcolor="#FFFFFF" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="redstripe" height="4" bgcolor="#D24152" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                  </tr>
+                </table>
+                <!-- /RED-WHITE DIVIDER -->  
+
+                <!-- TWO COLUMN POSITION-SWITCH -->
+                <table class="devicewidth" width="600" role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto;">
+                  <tr>
+                    <td align="center" valign="top">
+
+                      <!-- /TWO COLUMN CONTENT NY -->
+                      <table class="devicewidth" width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                        <!-- Spacing - Top -->
+                        <tr>
+                          <td class="mobspac1" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                        </tr>
+                        <!-- Spacing -->
+                        <tr>
+                          <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                          <!-- gutterleft -->
+                          <td width="20" class="gutterleft" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
+                          </td>
+                          <td align="left" valign="top">
+                            <table class="devicewidthinner" width="560" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td dir="rtl" bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%">
+                                  <!--[if mso]>
+                                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+                                    <tr>
+                                      <td align="center" valign="top" width="560">
+                                  <![endif]-->
+                                  <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width:560px;">
+                                    <tr>
+                                      <td align="center" valign="top" style="font-size:0; padding: 0;">
+                                        <!--[if mso]>
+                                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+                                          <tr>
+                                            <td align="left" valign="top" width="280">
+                                        <![endif]-->
+                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
+                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td dir="ltr">
+                                                <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" align="right">
+                                                  <tr>
+                                                    <td align="center" valign="top">
+                                                      <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" class="" align="right">
+                                                        <tr>
+                                                          <td align="center" valign="top" style="">
+                                                            <img class="rtl-img" width="280" height="186" src="img/bo-timessquare-500X333.jpg" alt="Sidecar Dog Tour 2022" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none;" border="0"  />
+                                                          </td>
+                                                        </tr>
+                                                        <!-- Spacing -->
+                                                        <tr>
+                                                          <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <!-- Spacing -->
+                                                      </table>
+                                                    </td>
+
+                                                  </tr>
+                                                  <!-- Spacing -->
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                        </td>
+                                        <td align="left" valign="top" width="280">
+                                        <![endif]-->
+                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
+                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td style="font-size: 36px; color:#000000;" dir="ltr"> <!-- Don't forget to switch dir to ltr here, or else text runs in reverse -->
+                                                <table align="left" width="260" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                  <!-- Spacing -->
+                                                  <tr>
+                                                    <td class="spacing20" height="0" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                  </tr>
+                                                  <!-- Spacing -->
+                                                  <tr>
+                                                    <td align="left" valign="top">
+                                                      
+                                                      <table class="devicewidthinner" width="260" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td class="pos-switch-heading" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight:bold; color:#D24152; line-height: 21px; text-align:left;">
+                                                            New York, NY
+                                                          </td>
+                                                        </tr>
+                                                        <!-- Spacing -->
+                                                        <tr>
+                                                          <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <!-- Spacing -->   
+                                                        <!-- Title Underscore -->
+                                                        <tr>
+                                                          <td align="left" valign="top">
+                                                            <table align="left" width="143" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                              <tr>
+                                                                <td height="2" align="left" width="100%" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; background: #e1e1e1; ">&nbsp;
+                                                                </td>
+                                                              </tr>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                        <!-- Spacing -->
+                                                        <tr>
+                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <!-- Spacing -->                                
+                                                        <tr>
+                                                          <td class="pos-switch-text" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style:normal; font-weight:normal; color:#6b6b6b; line-height: 21px; text-align: left; ">
+                                                            The <span class="pop-blue">Sidecar Dog Tour 2022</span> kicks off at the Center of the Known Universe, Times Square, New York City on Home Opening Day, 2022. From there, we ride to Yankee Stadium for peanuts and Cracker Jack!
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                        <![endif]-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!--[if mso]>
+                                  </td>
+                                  </tr>
+                                  </table>
+                                  <![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- gutterright -->
+                          <td width="20" class="gutterright" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- /TWO COLUMN CONTENT NY -->
+
+                      <!-- TWO COLUMN CONTENT LA -->
+                      <table class="devicewidth" width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                          <!-- gutterleft -->
+                          <td width="20" class="gutterleft" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+
+                          <td align="left" valign="top">
+
+                            <table class="devicewidthinner" width="560" align="left" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td dir="rtl" bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%">
+                                  <!--[if mso]>
+                                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+                                    <tr>
+                                      <td align="center" valign="top" width="560">
+                                  <![endif]-->
+                                  <table align="center" width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width:560px;">
+                                    <tr>
+                                      <td align="center" valign="top" style="font-size:0; padding: 0;">
+                                        <!--[if mso]>
+                                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+                                          <tr>
+                                            <td align="left" valign="top" width="280">
+                                        <![endif]-->
+                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
+                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td dir="ltr">
+                                                <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" align="right">
+                                                  <tr>
+                                                    <td align="center" valign="top">
+                                                      <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" class="" align="center">
+                                                        <tr>
+                                                          <td align="center" valign="top" style="padding-left: 0;">
+                                                            <img class="rtl-img" src="img/bo-jupiter-500X333.jpg" width="280" height="186" alt="Sidecar Dog Tour 2022" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none;" border="0">
+                                                          </td>
+                                                        </tr>
+                                                        <!-- Spacing -->
+                                                        <tr>
+                                                          <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <!-- Spacing -->
+                                                        <!-- Spacing -->
+                                                        <tr>
+                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <!-- Spacing -->
+                                                      </table>
+                                                    </td>
+
+                                                  </tr>
+                                                  <!-- Spacing -->
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                        </td>
+                                        <td align="left" valign="top" width="280">
+                                        <![endif]-->
+                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top ">
+                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td style="font-size: 36px; color:#000000;" dir="ltr"> <!-- Don't forget to switch dir to ltr here, or else text runs in reverse -->
+                                                <table align="left" width="260" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                  <!-- Spacing -->
+                                                  <tr>
+                                                    <td class="spacing20" height="0" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                  </tr>
+                                                  <!-- Spacing -->
+                                                  <tr>
+                                                    <td align="left" valign="top">
+                                                      
+                                                      <table class="devicewidthinner" width="260" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td class="pos-switch-heading" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight:bold; color:#D24152; line-height: 21px; text-align:left;">
+                                                            Los Angeles, CA
+                                                          </td>
+                                                        </tr>
+                                                        <!-- Spacing -->
+                                                        <tr>
+                                                          <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <!-- Spacing -->   
+                                                         <!-- Title Underscore -->
+                                                         <tr>
+                                                          <td align="left" valign="top">
+                                                            <table align="left" width="175" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                              <tr>
+                                                                <td height="2" align="left" width="100%" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; background: #e1e1e1; ">&nbsp;
+                                                                </td>
+                                                              </tr>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+
+                                                        <!-- Spacing -->
+                                                        <tr>
+                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                        <!-- Spacing -->                                
+                                                        <tr>
+                                                          <td class="pos-switch-text" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style:normal; font-weight:normal; color:#6b6b6b; line-height: 21px; text-align: left; ">
+                                                            The <span class="pop-blue">Sidecar Dog Tour 2022</span> wraps up after the final L.A. home game at Dodger Stadium. Then we head to the nearest dog-friendly beach for some Frisbee, fun and well-deserved treats!
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                        <![endif]-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!--[if mso]>
+                                  </td>
+                                  </tr>
+                                  </table>
+                                  <![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- gutterright -->
+                          <td width="20" class="gutterright" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- /TWO COLUMN CONTENT LA -->
+                    </td>
+                  </tr>
+                </table>
+                <!-- TWO COLUMN POSITION-SWITCH -->
+
+                <!-- /CONTENT  -->
+              </td>
+            </tr>
+            <!-- Spacing -->
+            <tr>
+              <td height="100" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+            </tr>
+            <!-- Spacing -->
+          </table>
+          </td>
+        </tr>
+      </table>
+  </body>
+</html>

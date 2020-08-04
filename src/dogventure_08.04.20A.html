@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-  <title>SUBHEAD</title>
+  <title>DOGVENTURE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Cerberus: Use the latest (edge) version of IE rendering engine -->
   <meta name="x-apple-disable-message-reformatting">  <!-- Cerberus: Disable auto-scale in iOS 10 Mail entirely -->
@@ -25,6 +25,7 @@
   <![endif]-->
 
   <style type="text/css">
+
     body {
       margin: 0px;
       padding: 0px;
@@ -94,6 +95,7 @@
         width:100% !important;
         height:auto !important;
       }
+
     }
     /* End of Synthroid Email Styles */
 
@@ -111,6 +113,8 @@
       font-weight: 900;
       text-transform: uppercase;
     }
+
+
 
     /* Client-specific Styles */
     #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
@@ -141,6 +145,7 @@
     /* VA! Clear any floats and set the full-width top-level parent table to 100% width */
     table.full { width: 100%; clear: both; }
 
+
     /*DEV STYLES*/
     /* !VA Uncomment this to make TD gutters visible for dev */
      /* .gutterleft, .gutterright { border: 1px solid red !important;} */ */
@@ -160,6 +165,18 @@
       .responsive-table {
           width: 100% !important;
       }
+
+      span.pop-red {
+        color: #D24152;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      span.pop-blue {
+        color: #314F6E;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
       /* End LITMUS Style */
 
     /* Large Phone Styles - Targeting iPhone 11, XR, 6 Plus, 6S Plus, 7 Plus, 8 Plus i.e. 414px logical resolution to 599px */
@@ -172,24 +189,39 @@
       /* ----- Template -------*/
 
       /* Default large phone device width: */
-      .devicewidth { width: 412px !important; align: center !important; }
+      .devicewidth { width: 412px !important; align: center !important; align: center !important;}
       /* Default large phone inner device width: */
-      .devicewidthinner { width: 392px !important;}
+      .devicewidthinner { width: 372px !important;}
       /* The .mobileshow class ensures that the mobile image swap image displays at the default Large Phones width of 414px. */
       img.mobileshow { width: 412px !important; height: auto !important; }
+      .wrapper {
+          width: 100% !important;
+        	max-width: 100% !important;
+      }
+
+
 
       /* lps */
-      /* VA! SUBHEAD */
-      td.subtext { font-size: 20px !important; line-height: 22px !important; padding: 5px 5px !important; }
-      img.baseball { width: 25px !important; height: 25px !important; }
-      span.subtext-pop { font-size: 24px !important; }
-      td.subheadspacing { height: 4px !important; }
-      /* VA! /subhead */
+      td.mobspac1 { height: 25px !important;}
+      td.mobspac2 { height: 20px !important; }
+      td.mobspac0 { height: 0 !important;}
+      td.mobspac3 { height: 7px !important;}
+      td.mobspac4 { height: 10px !important;}
+      td.mobspac5 { height: 7px !important;}
+      td.mobspac6 { height: 10px !important; }
+
+      /* VA! DOGVENTURE */
+      img.img-gif { width: 280px !important; height: 186px !important; }
+      td.map-bg { width: auto !important; height: 440px !important;}
+      td.dogventuretext { font-size: 36px !important; line-height: 40px !important;}
+      td.barks { font-size: 22px !important; line-height: 28px !important; } 
+      /* VA! /DOGVENTURE */
+
 
     }
 
       /* Small Phone Styles - Targeting most Samsung and smaller iPhone devices, i.e. smallest devices up to 413px logical resolution */
-      @media only screen and (max-width: 411px) {
+      @media only screen and (max-width: 413px) {
       /* !VA Phone number, mobile link styling */
       a[href^="tel"], a[href^="sms"] { text-decoration: none; color: #0a8cce; pointer-events: none; cursor: default; }
       /* !VA Phone number, mobile link styling */
@@ -203,106 +235,108 @@
 
       /* The .mobileshow ensures that the mobile image swap image displays at the default Small Phones width of 320px. */
       img.mobileshow { width: 318px !important; height: auto !important; }
+      td.mobspac1 { height: 17px !important;}
+      td.mobspac2 { height: 20px !important; }
+      td.mobspac0 { height: 0 !important;}
+      td.mobspac3 { height: 10px !important;}
+      td.mobspac4 { height: 10px !important;}
+      td.mobspac5 { height: 7px !important;}
+      td.mobspac6 { height: 15px !important; }
 
       /* sps */
-      /* VA! SUBHEAD */
-      td.subtext { font-size: 16px !important; line-height: 18px !important; padding: 5px 0 !important;}
-      img.baseball { width: 20px !important; height: 20px !important; }
-      span.subtext-pop { font-size: 18px !important; vertical-align: -1px;}
-      td.subheadspacing { height: 3px !important; }
-      /* VA! /subhead */
+      /* VA! DOGVENTURE */
+      img.img-gif { width: 220px !important; height: 146px !important; }
+      td.map-bg { width: 507px !important; height: 355px !important;}
+      td.dogventuretext { font-size: 28px !important; line-height: 32px !important;}
+      td.barks { font-size: 18px !important; line-height: 22px !important; } 
+      /* VA! /DOGVENTURE */
+
     }
   </style>
 </head>
 
   <body>
-    <table class="fullgmail" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border: 0; min-width: 600px;">
+
+    <table class="fullgmail" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" style="min-width: 602px;">
       <tr>
         <td align="center" valign="top">
-          
-          <!-- VA! CONTENT WRAPPER - Includes left/right 1px border. -->
-          <table width="600" class="devicewidth" align="center" bgcolor="#FFFFFF" border="0" role="presentation" cellpadding="0" cellspacing="0" >
+          <!-- VA! The Content Parent table can't have devicewidth applied. That might have ramifications... -->
+
+          <!-- Legacy Start --> 
+          <!-- VA! This is just for the border - check to see if it's OK to put it on the master table, or even if the master table is needed. -->
+          <table class="devicewidth" width="602" align="center" bgcolor="#FFFFFF" border="0" role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 auto;" >
             <tr>
               <td align="center" valign="top" style="border-left: 1px solid #959595; border-right: 1px solid #959595;">
 
-                <!-- SUBHEAD WRAPPER-->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                  <!-- RED BAR -->
-                  <tr>
-                    <td width="100%" valign="middle" height="10" bgcolor="#D24152" align="left">
-                    </td>
-                  </tr>
-                  <!-- SUBHEAD CONTENT -->
-                  <tr>
-                    <td valign="top" align="left">
-                      <!-- SUBHEAD CONTENT WRAPPER -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="10" class="subheadspacing" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <!-- SUBHEAD Left-->
-                          <td width="23%" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td class="subtext" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px;color: #D24152;">48</span> States!
-                                </td>
-                              </tr>
-                              subhead_07.26.20A.html           </table>
-                          </td>
-                          <!-- SUBHEAD BULLET 1-->
-                          <td valign="middle" align="center">
-                            <a href="#"><img class="baseball" src="img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
-                          </td>
-                          <!-- SUBHEAD Center-->
-                          <td width="34%" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td class="subtext" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px; color: #D24152; ">30</span> Ballparks!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- SUBHEAD BULLET 2 -->
-                          <td valign="middle" align="center">
-                            <a href="#"><img class="baseball" src="img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
-                          </td>
-                          <!-- SUBHEAD Right-->
-                          <td width="27%" class="subhead" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td valign="top" class="subtext" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px;color: #D24152; ">30,000</span> Miles!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
+                <!-- CONTENT -->
 
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="7" class="subheadspacing" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                      </table>
-                    </td>
-                  </tr>
-                  <!-- BLUE BAR -->
+                <!-- DOGVENTURE -->
+                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#484848" align="center">
                   <tr>
-                    <td width="100%" valign="top" height="10" bgcolor="#314F6E" align="center">
+                    <td class="map-bg" width="600" valign="top" height="460" bgcolor="#484848" background="img/map-bg.png">
+                      <!--[if gte mso 9]>
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:420px;">
+                      <v:fill type="tile" src="img/map-bg.png" color="#484848" />
+                      <v:textbox inset="0,0,0,0">
+                      <![endif]-->
+                      <div>
+                      
+                        <!-- FOREGROUND CONTENT WRAPPER -->
+                        <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+                          <!-- Spacing -->
+                          <tr>
+                            <td class="mobspac2" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                          </tr>
+                          <!-- Spacing -->
+                          <tr>
+                            <td valign="top" align="center">
+                              <a href="#"><img class="img-gif" alt="The Great Dogventure" src="img/bo.gif" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="280" height="186" border="0"></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" align="center">
+                              <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                <!-- Spacing -->
+                                <tr>
+                                  <td class="mobspac2" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                </tr>
+                                <!-- Spacing -->
+                                <table class="devicewidthinner" role="presentation" width="500" cellspacing="0" cellpadding="0" border="0" align="center">
+                                  <tr>
+                                    <td class="dogventuretext" width="100%" valign="top" align="center" style="display: block; margin: 0 auto; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 46px; line-height: 48px; color: #D24152; font-weight: 900; text-align: center; text-transform: uppercase; ">
+                                      The Great Dogventure
+                                    </td>
+                                  </tr>
+                                  <!-- Spacing -->
+                                  <tr>
+                                    <td class="mobspac1" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                  </tr>
+                                  <!-- Spacing -->
+                                  <tr>
+                                    <td class="barks" width="100%" valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; line-height: 34px; color: #FFFFFF; font-weight: bold; text-align: center; text-transform: uppercase; margin: 0;">
+                                      Bikes, Barks and Ballparks Across America!
+                                    </td>
+                                  </tr>
+                                  <!-- Spacing -->
+                                  <tr>
+                                    <td class="mobspac2" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                  </tr>
+                                  <!-- Spacing -->
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if gte mso 9]>
+                        </v:textbox>
+                      </v:rect>
+                      <![endif]-->
                     </td>
                   </tr>
-                  
                 </table>
-                <!-- /SUBHEAD WRAPPER-->
+                <!-- /DOGVENTURE -->
 
+                <!-- /CONTENT  -->
               </td>
             </tr>
             <!-- Spacing -->
@@ -311,10 +345,8 @@
             </tr>
             <!-- Spacing -->
           </table>
-          <!-- /CONTENT WRAPPER -->
-
-        </td>
-      </tr>
-    </table>
+          </td>
+        </tr>
+      </table>
   </body>
 </html>
