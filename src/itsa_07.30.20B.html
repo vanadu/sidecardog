@@ -154,7 +154,6 @@
     .dvred {border: 1px solid red}
     .dvblu {border: 1px solid blue }
 
-      /* Was img-max */
       /* LITMUS Style */
       .img-fluid {
         max-width: 100% !important;
@@ -166,8 +165,10 @@
           width: 100% !important;
       }
 
-
-
+      .wrapper {
+          width: 100% !important;
+        	max-width: 100% !important;
+      }
       /* End LITMUS Style */
 
     /* Large Phone Styles - Targeting iPhone 11, XR, 6 Plus, 6S Plus, 7 Plus, 8 Plus i.e. 414px logical resolution to 599px */
@@ -185,27 +186,24 @@
       .devicewidthinner { width: 392px !important;}
       /* The .mobileshow class ensures that the mobile image swap image displays at the default Large Phones width of 414px. */
       img.mobileshow { width: 412px !important; height: auto !important; }
-      .wrapper {
-          width: 100% !important;
-        	max-width: 100% !important;
-      }
-
-
+      td.mobspac_00_00 { height: 0 !important; }
+      td.mobspac_04_02 { height: 4px !important;}
+      td.mobspac_07_04 { height: 7px !important; }
+      td.mobspac_10_05 { height:10px !important; }
+      td.mobspac_12_07 { height:12px !important; }
+      td.mobspac_15_10 { height:15px !important; }
+      td.mobspac_20_10 { height:20px !important; }
+      td.mobspac_20_15 { height:20px !important; }
+      td.mobspac_25_20 { height:25px !important; }
 
       /* lps */
-      td.mobspac1 { height: 25px !important;}
-      td.mobspac2 { height: 25px !important; }
-      td.mobspac0 { height: 0 !important;}
-      td.mobspac3 { height: 7px !important;}
-
-
-      /* itsa */
-      td.itsa { font-size: 22px !important; line-height: 32px !important; } 
+      /* ITSA */ 
+      td.itsa { font-size: 22px !important; line-height: 30px !important; } 
       img.sidecar { width: 260px !important; height: 300px !important; }
-      span.pop-font { font-size: 26px !important;}
-      span.pop-font-plus { font-size: 30px !important; }
+      span.pop-font { font-size: 24px !important;}
+      span.pop-font-plus { font-size: 26px !important; }
       td.everything { font-size: 22px !important; line-height: 26px !important; } 
-      /* /itsa */
+
     }
 
       /* Small Phone Styles - Targeting most Samsung and smaller iPhone devices, i.e. smallest devices up to 413px logical resolution */
@@ -223,19 +221,22 @@
 
       /* The .mobileshow ensures that the mobile image swap image displays at the default Small Phones width of 320px. */
       img.mobileshow { width: 318px !important; height: auto !important; }
-      td.mobspac1 { height: 17px !important;}
-      td.mobspac2 { height: 25px !important; }
-      td.mobspac0 { height: 0 !important;}
-      td.mobspac3 { height: 10px !important;}
+      td.mobspac_04_02 { height: 2px !important; }
+      td.mobspac_07_04 { height: 4px !important; }
+      td.mobspac_10_05 { height: 5px !important; }
+      td.mobspac_12_07 { height:7px !important; }
+      td.mobspac_20_10 { height:10px !important; }
+      td.mobspac_20_15 { height:15px !important; }
+      td.mobspac_25_20 { height:20px !important; }
 
       /* sps */
-      /* itsa */
-      td.itsa { font-size: 18px !important; line-height: 26px !important; } 
+      /* VA! ITSA */ 
+      td.itsa { display: block; font-size: 18px !important; line-height: 26px !important; } 
       img.sidecar { width: 220px !important; height: 254px !important; }
-      span.pop-font { font-size: 22px !important; }
-      span.pop-font-plus { font-size: 24px !important; }
+      span.pop-font { font-size: 21px !important; }
+      span.pop-font-plus { font-size: 22px !important; }
       td.everything { font-size: 17px !important; line-height: 21px !important; } 
-      /* /itsa */
+
     }
   </style>
 </head>
@@ -254,6 +255,20 @@
               <td align="center" valign="top" style="border-left: 1px solid #959595; border-right: 1px solid #959595;">
 
                 <!-- CONTENT -->
+
+                <!-- DIVIDER -->
+                <table width="600" cellpadding="0" cellspacing="0" role="presentation" border="0" align="center" class="devicewidth">
+                  <tr>
+                    <td class="redstripe" bgcolor="#D24152" height="4" width="100%" style="font-size: 1px; line-height: 1px; color: #D24152; mso-line-height-rule: exactly;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="whitestripe" height="4" bgcolor="#FFFFFF" style="font-size: 1px; line-height: 1px; color: #FFFFFF; mso-line-height-rule: exactly;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="redstripe" height="4" bgcolor="#D24152" style="font-size: 1px; line-height: 1px; color: #D24152; mso-line-height-rule: exactly;">&nbsp;</td>
+                  </tr>
+                </table>
+                <!-- /DIVIDER -->  
 
                 <!-- ITSA -->
                 <table class="devicewidth" width="600" bgcolor="#314F6E" width="100%" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
@@ -284,37 +299,37 @@
                                     <table style="max-width:280px; " class="wrapper" width="100%" align="left" role="presentation" cellpadding="0" cellspacing="0" border="0">
                                       <!-- Spacing -->
                                         <tr>
-                                          <td class="mobspac1" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                          <td class="mobspac_20_15" height="35" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                         </tr>
                                       <!-- Spacing -->
                                       <tr>
                                         <td class="itsa" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 40px 0 40px;">
-                                          It's a <span class="pop-font" style="font-size: 32px; text-transform: uppercase; color: #D24152">motorcycle!</span>
+                                          It's a <span class="pop-font" style="font-size: 32px; text-transform: uppercase; color: #D24152">motorbike!</span>
                                         </td>
                                       </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td class="mobspac3" height="34" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                        <td class="mobspac_10_05" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                       </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td class="itsa" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 50px 0 50px;">
+                                        <td class="itsa" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 50px 0 50px;">
                                           It's a <span class="pop-font" style="font-size: 32px; text-transform: uppercase; color: #D24152">Baseball!</span>
                                         </td>
                                       </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td class="mobspac3" height="34" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                        <td class="mobspac_10_05" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                       </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td class="itsa" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; ">
-                                          It's the <span style="display: block;"> </span><span class="pop-font-plus" style="font-size: 34px; text-transform: uppercase; color: #D24152">SIDECAR DOG TOUR&nbsp;2020!</span>
+                                        <td class="itsa" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 38px; text-align: center; ">
+                                          It's the </br> <span class="pop-font-plus" style="font-size: 34px; text-transform: uppercase; color: #D24152">SIDECAR DOG TOUR&nbsp;2020!</span>
                                         </td>
                                       </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td class="mobspac3" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                        <td class="mobspac_04_02" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                       </tr>
                                       <!-- Spacing -->
                                     </table>
@@ -338,7 +353,7 @@
                                                       <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
                                                         <!-- Spacing -->
                                                         <tr>
-                                                          <td class="mobspac1" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                          <td class="mobspac_25_20" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                                         </tr>
                                                         <!-- Spacing -->
                                                         <tr>
@@ -348,7 +363,7 @@
                                                         </tr>
                                                         <!-- Spacing -->
                                                         <tr>
-                                                          <td class="mobspac1" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                          <td class="mobspac_25_20" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                                         </tr>
                                                         <!-- Spacing -->
                                                       </table>
@@ -383,7 +398,7 @@
                             <table width="100%" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" style="max-width: 560px">
                               <!-- Spacing -->
                               <tr>
-                                <td class="mobspac3" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                <td class="mobspac_07_04" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <!-- Spacing -->
                               <tr>
@@ -393,7 +408,7 @@
                               </tr>
                               <!-- Spacing -->
                                 <tr>
-                                  <td class="mobspac3" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                  <td class="mobspac_10_05" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                 </tr>
                               <!-- Spacing -->
                               <tr>
@@ -403,7 +418,7 @@
                               </tr>
                               <!-- Spacing -->
                                 <tr>
-                                  <td class="mobspac2" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                  <td class="mobspac_25_20" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                 </tr>
                               <!-- Spacing -->
                             </table>

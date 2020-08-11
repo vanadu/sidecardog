@@ -103,18 +103,6 @@
     .devred {border: 1px solid red !important}
     .devblu {border: 1px solid blue !important; }
     .devmag {border: 1px solid magenta !important; }
-    span.pop-red {
-      color: #D24152;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-    span.pop-blue {
-      color: #314F6E;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-
-
 
     /* Client-specific Styles */
     #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
@@ -154,30 +142,22 @@
     .dvred {border: 1px solid red}
     .dvblu {border: 1px solid blue }
 
-      /* Was img-max */
-      /* LITMUS Style */
-      .img-fluid {
-        max-width: 100% !important;
+    /* LITMUS Style */
+    .img-fluid {
+      max-width: 100% !important;
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .responsive-table {
         width: 100% !important;
-        height: auto !important;
-      }
+    }
 
-      .responsive-table {
-          width: 100% !important;
-      }
-
-      span.pop-red {
-        color: #D24152;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
-      span.pop-blue {
-        color: #314F6E;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
-
-      /* End LITMUS Style */
+    .wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    /* End LITMUS Style */
 
     /* Large Phone Styles - Targeting iPhone 11, XR, 6 Plus, 6S Plus, 7 Plus, 8 Plus i.e. 414px logical resolution to 599px */
     @media only screen and (max-width: 599px) {
@@ -194,29 +174,17 @@
       .devicewidthinner { width: 372px !important;}
       /* The .mobileshow class ensures that the mobile image swap image displays at the default Large Phones width of 414px. */
       img.mobileshow { width: 412px !important; height: auto !important; }
-      .wrapper {
-          width: 100% !important;
-        	max-width: 100% !important;
-      }
-
-
+      td.mobspac_00_00 { height: 0 !important; }
+      td.mobspac_04_02 { height: 4px !important;}
+      td.mobspac_07_04 { height: 7px !important; }
+      td.mobspac_10_05 { height:10px !important; }
+      td.mobspac_12_07 { height:12px !important; }
+      td.mobspac_15_10 { height:15px !important; }
+      td.mobspac_20_10 { height:20px !important; }
+      td.mobspac_20_15 { height:20px !important; }
+      td.mobspac_25_20 { height:25px !important; }
 
       /* lps */
-      td.mobspac1 { height: 25px !important;}
-      td.mobspac2 { height: 20px !important; }
-      td.mobspac0 { height: 0 !important;}
-      td.mobspac3 { height: 7px !important;}
-      td.mobspac4 { height: 10px !important;}
-      td.mobspac5 { height: 7px !important;}
-      td.mobspac6 { height: 10px !important; }
-
-      /* QUESTIONS */
-      td.itsa { font-size: 18px !important; line-height: 23px !important; } 
-      div.pos-switch { width: 100% !important; max-width: 100% !important; }
-      img.info-icon { width: 120px !important; height: 72px !important; }
-      img.email { width: 240px !important; height: 196px !important; }
-      /* /QUESTIONS */
-
 
     }
 
@@ -235,22 +203,15 @@
 
       /* The .mobileshow ensures that the mobile image swap image displays at the default Small Phones width of 320px. */
       img.mobileshow { width: 318px !important; height: auto !important; }
-      td.mobspac1 { height: 17px !important;}
-      td.mobspac2 { height: 20px !important; }
-      td.mobspac0 { height: 0 !important;}
-      td.mobspac3 { height: 10px !important;}
-      td.mobspac4 { height: 10px !important;}
-      td.mobspac5 { height: 7px !important;}
-      td.mobspac6 { height: 15px !important; }
+      td.mobspac_04_02 { height: 2px !important; }
+      td.mobspac_07_04 { height: 4px !important; }
+      td.mobspac_10_05 { height: 5px !important; }
+      td.mobspac_12_07 { height:7px !important; }
+      td.mobspac_20_10 { height:10px !important; }
+      td.mobspac_20_15 { height:15px !important; }
+      td.mobspac_25_20 { height:20px !important; }
 
       /* sps */
-      /* QUESTIONS */
-      td.questionsheader { font-size: 21px !important; line-height: 25px !important; } 
-      table.headingunderscore { width: 130px !important;}
-      td.itsa { font-size: 17px !important; line-height: 20px !important; }
-      img.info-icon { width: 100px !important; height: 60px !important; }
-      img.email { width: 220px !important; height: 180px !important; }
-      /* /QUESTIONS */
 
     }
   </style>
@@ -294,7 +255,7 @@
                           <!-- Spacing -->
                           <tr>
                             <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 19px; text-align: left;">
-                              All text and graphics on this website were created by Van Albert and are provided exclusively for educational purposes. The images, icons and text displayed on this website and contained in the sample email are property of Van Albert and sidecardog.com. 
+                              All text and graphics on this website and the associated email were created by Van Albert and are provided exclusively for educational purposes. The images, icons and text displayed on this website and contained in the sample email are property of Van Albert and SIDECARDOG.COM. 
                             </td>
                           </tr>
                           <tr>
@@ -319,7 +280,7 @@
                                       </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td align="center" valign="top" style="padding-bottom: 5px">
+                                        <td align="left" valign="top" style="padding-bottom: 5px">
                                           <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
                                         </td>
                                       </tr>
@@ -345,7 +306,7 @@
                           <!-- Spacing -->
                           <tr>
                             <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 19px; text-align: left;">
-                              This content is provided as an HTML email example for educational purposes and may be freely downloaded for non-commerical use. Users are free to adapt and recycle sections of HTML code including the header, CSS styling and individual HTML elements and attributes without restriction. All images and all text relating to the 'Sidecar Dog Tour 2022' are provided under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license (see above) and may be shared exclusively for informational and non-commercial purposes. Sharing of adaptations of the images or other content or commercial usage thereof is prohibited.
+                              This content is provided as an HTML email example for educational purposes and may be freely downloaded for non-commerical use. Users are free to adapt and recycle sections of HTML code including the header, CSS styling and individual HTML elements and attributes without restriction. All images and all text relating to the 'Sidecar Dog Tour 2022' are provided under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license (see above) and may be shared exclusively for informational and non-commercial purposes. Display or online publication of this content on third party websites or tutorials without the written consent of the copyright holder is prohibited. Sharing of adaptations of the images or other content or commercial usage thereof is prohibited.
                             </td>
                           </tr>
                           <!-- Spacing -->
@@ -374,11 +335,7 @@
                 <!-- /CONTENT  -->
               </td>
             </tr>
-            <!-- Spacing -->
-            <tr>
-              <td height="100" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-            </tr>
-            <!-- Spacing -->
+
           </table>
           </td>
         </tr>

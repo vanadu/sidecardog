@@ -101,16 +101,7 @@
     .devred {border: 1px solid red !important}
     .devblu {border: 1px solid blue !important; }
     .devmag {border: 1px solid magenta !important; }
-    span.pop-red {
-      color: #D24152;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-    span.pop-blue {
-      color: #314F6E;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
+
 
     /* Client-specific Styles */
     #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
@@ -149,7 +140,6 @@
     .dvred {border: 1px solid red}
     .dvblu {border: 1px solid blue }
 
-      /* Was img-max */
       /* LITMUS Style */
       .img-fluid {
         max-width: 100% !important;
@@ -161,13 +151,10 @@
           width: 100% !important;
       }
 
-      /* From Litmus */
       .wrapper {
           width: 100% !important;
         	max-width: 100% !important;
       }
-
-
       /* End LITMUS Style */
 
       /* Start GLOBAL Styles */
@@ -175,7 +162,7 @@
 
 
     /* Large Phone Styles - Targeting iPhone 11, XR, 6 Plus, 6S Plus, 7 Plus, 8 Plus i.e. 414px logical resolution to 599px */
-    @media only screen and (max-width: 599px) {
+    @media only screen and (max-width:599px) {
 
       a[href^="tel"], a[href^="sms"] { color: #0a8cce; /* or whatever your want */ pointer-events: none; cursor: default; }
 
@@ -191,7 +178,6 @@
       img.mobileshow { width: 412px !important; height: auto !important; }
       td.mobspac_00_00 { height: 0 !important; }
       td.mobspac_04_02 { height: 4px !important;}
-      /* td.mobspac_05_02 { height: 5px !important; } */
       td.mobspac_07_04 { height: 7px !important; }
       td.mobspac_10_05 { height:10px !important; }
       td.mobspac_12_07 { height:12px !important; }
@@ -201,42 +187,50 @@
       td.mobspac_25_20 { height:25px !important; }
 
       /* lps */
-      /* VA! HEADER */
+
+      /* Headings */
+      td.heading_36_28 { font-size: 36px !important; line-height: 40px !important;}
+      td.heading_34_26 { font-size: 34px !important; line-height: 38px !important;}
+      td.heading_32_30 { font-size: 32px !important; line-height: 34px !important;}
+      td.heading_32_28 { font-size: 32px !important; line-height: 34px !important;}
+      td.heading_24_21 { font-size: 24px !important; line-height: 28px !important; } 
+      /* Subheadings */
+      span.subhead_text_pop { font-size: 24px !important; }
+      td.subhead_21_19 { font-size: 21px !important; }
+      td.subhead_text { font-size: 20px !important; line-height: 24px !important; padding: 5px 5px !important; }
+      span.text-pop { font-size: 24px !important;}
+      span.text-pop-plus { font-size: 26px !important; }
+      /* Body Text */
+      td.body_22_18 { font-size: 22px !important; line-height: 28px !important; } 
+      td.body_20_18 { font-size: 20px !important; line-height: 24px !important; }
+      td.body_21_19 { font-size: 21px !important; }
+      td.body_19_17 { font-size: 19px !important; line-height: 23px !important; } 
+
+      /* HEADER */
       img.headerstars { width: 412px !important; height: 20px !important; }
       td.headerstripe { width: 60px !important; height: 18px !important; }
       table.headertextwrapper { width: 292px !important; }
-      td.headertext { font-size: 32px !important; line-height: 32px !important;}
-      /* VA! SUBHEAD */
-      td.subtext { font-size: 20px !important; line-height: 22px !important; padding: 5px 5px !important; }
+      /* SUBHEAD */
       img.baseball { width: 25px !important; height: 25px !important; }
-      span.subtext-pop { font-size: 24px !important; }
-      /* VA! DOGVENTURE */
+      /* DOGVENTURE */
       img.img-gif { width: 280px !important; height: 186px !important; }
       td.map-bg { width: auto !important; height: 420px !important;}
-      td.dogventuretext { font-size: 36px !important; line-height: 40px !important;}
-      td.barks { font-size: 22px !important; line-height: 28px !important; } 
+      span.pop-red { color: #D24152; font-weight: 900; text-transform: uppercase; }
+      span.pop-blue { color: #314F6E; font-weight: 900; text-transform: uppercase; } 
       /* ITSA */ 
-      td.itsa { font-size: 22px !important; line-height: 30px !important; } 
       img.sidecar { width: 260px !important; height: 300px !important; }
-      span.pop-font { font-size: 24px !important;}
-      span.pop-font-plus { font-size: 26px !important; }
-      td.everything { font-size: 22px !important; line-height: 26px !important; } 
       /* BIG APPLE */
-      td.mapheading { font-size: 32px !important; line-height: 28px !important; }
-      td.mapsubheading { font-size: 20px !important; line-height: 24px !important; }
       img.map { width: 360px !important; height: 228px !important; }
+      span.pop-red { color: #D24152; font-weight: 900; text-transform: uppercase; }
+      span.pop-blue { color: #314F6E; font-weight: 900; text-transform: uppercase; }
       /* NY-LA */
       div.pos-switch { max-width: 100% !important;}
       img.rtl-img {width: 371px !important; height: 247px !important;}
-      td.pos-switch-heading { font-size: 21px !important; }
-      td.bodytext { font-size: 19px !important; line-height: 23px !important; } 
       /* COME ALONG  */
       table.col-3 { width: 100% !important; align: center !important }
-      td.comealong { font-size: 32px !important; line-height: 37px !important; } 
       img.rig-icon { width: 160px !important; height: 96px !important; }
       table.comealongrule { width: 75% !important; }
       /* QUESTIONS */
-      td.questionstext { font-size: 17px !important; line-height: 23px !important; } 
       div.pos-switch { width: 100% !important; max-width: 100% !important; }
       img.info-icon { width: 120px !important; height: 72px !important; }
       img.email { width: 240px !important; height: 196px !important; }
@@ -244,7 +238,7 @@
     }
 
       /* Small Phone Styles - Targeting most Samsung and smaller iPhone devices, i.e. smallest devices up to 413px logical resolution */
-      @media only screen and (max-width: 411px) {
+      @media only screen and (max-width:411px) {
       /* !VA Phone number, mobile link styling */
       a[href^="tel"], a[href^="sms"] { text-decoration: none; color: #0a8cce; pointer-events: none; cursor: default; }
       /* !VA Phone number, mobile link styling */
@@ -258,57 +252,54 @@
 
       /* The .mobileshow ensures that the mobile image swap image displays at the default Small Phones width of 320px. */
       img.mobileshow { width: 318px !important; height: auto !important; }
-      
       td.mobspac_04_02 { height: 2px !important; }
-      /* td.mobspac_05_02 { height: 2px !important; } */
       td.mobspac_07_04 { height: 4px !important; }
       td.mobspac_10_05 { height: 5px !important; }
       td.mobspac_12_07 { height:7px !important; }
-      /* td.mobspac_15_10 { height:10px !important; } */
       td.mobspac_20_10 { height:10px !important; }
       td.mobspac_20_15 { height:15px !important; }
       td.mobspac_25_20 { height:20px !important; }
 
       /* sps */
-      /* VA! HEADER */
+      /* Headings */
+      td.heading_36_28 { font-size: 28px !important; line-height: 32px !important;}
+      td.heading_34_26 { font-size: 26px !important; line-height: 30px !important;}
+      td.heading_32_22 { font-size: 22px !important; line-height: 24px !important;}
+      td.heading_32_28 { font-size: 28px !important; line-height: 31px !important;}
+      td.heading_24_21 { font-size: 21px !important; line-height: 25px !important; } 
+      /* Subheadings */
+      td.subhead_21_19 { font-size: 19px !important; }
+      td.subhead_text { font-size: 16px !important; line-height: 18px !important; padding: 5px 0 !important;}
+      span.subhead_text_pop { font-size: 18px !important; vertical-align: -1px;}
+      span.text-pop { font-size: 21px !important; }
+      span.text-pop-plus { font-size: 22px !important; }
+      /* Body Text */
+      td.body_22_18 { font-size: 18px !important; line-height: 26px !important; } 
+      td.body_19_17 { font-size: 17px !important; line-height: 20px !important; } 
+
+      /* HEADER */
       img.headerstars { width: 318px !important; height: 15px !important; }
       td.headerstripe { width: 30px !important; height: 15px !important; }
       table.headertextwrapper { width: 258px !important; }
-      td.headertext { font-size: 30px !important; line-height: 30px !important;}
-      /* VA! SUBHEAD */
-      td.subtext { font-size: 16px !important; line-height: 18px !important; padding: 5px 0 !important;}
+      /* SUBHEAD */
       img.baseball { width: 20px !important; height: 20px !important; }
-      span.subtext-pop { font-size: 18px !important; vertical-align: -1px;}
       td.subheadspacing { height: 3px !important; }
-      /* VA! DOGVENTURE */
+      /* DOGVENTURE */
       img.img-gif { width: 220px !important; height: 146px !important; }
       td.map-bg { width: 507px !important; height: 330px !important;}
-      td.dogventuretext { font-size: 28px !important; line-height: 32px !important;}
-      td.barks { font-size: 18px !important; line-height: 22px !important; } 
-      /* VA! ITSA */ 
-      td.itsa { display: block; font-size: 18px !important; line-height: 26px !important; } 
+      /* ITSA */ 
       img.sidecar { width: 220px !important; height: 254px !important; }
-      span.pop-font { font-size: 21px !important; }
-      span.pop-font-plus { font-size: 22px !important; }
-      td.everything { font-size: 17px !important; line-height: 21px !important; } 
       /* BIG APPLE */
-      td.mapheading { font-size: 24px !important; line-height: 26px !important; }
-      td.mapsubheading { font-size: 18px !important; line-height: 22px !important; }
       img.map { width: 280px !important; height: auto !important }
       /* NY-LA */
       div.pos-switch { max-width: 100% !important;}
       img.rtl-img {width: 300px !important; height: 200px !important;}
-      td.pos-switch-heading { font-size: 19px !important; }
-      td.bodytext { font-size: 17px !important; line-height: 20px !important; } 
       /* COME ALONG */
-      td.comealong { font-size: 22px !important; line-height: 24px !important; } 
       img.rig-icon { width: 120px !important; height: 72px !important; }
       img.shrink50 { width: 152px !important; height: 77px !important }
       img.media-icon { width: 150px !important; height: 76px !important }
       /* QUESTIONS */
-      td.questionsheader { font-size: 21px !important; line-height: 25px !important; } 
       table.headingunderscore { width: 130px !important;}
-      td.questionstext { font-size: 17px !important; line-height: 20px !important; } 
       img.info-icon { width: 100px !important; height: 60px !important; }
       img.email { width: 220px !important; height: 180px !important; }
 
@@ -334,7 +325,7 @@
                       <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tr>
                           <td valign="top" align="left">
-                            <img class="headerstars" src="img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0">
+                            <img class="headerstars" src="http://www.sidecardog.com/img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0">
                           </td>
                         </tr>
                       </table>
@@ -378,7 +369,7 @@
                                     </tr>
                                     <!-- Spacing -->
                                     <tr>
-                                      <td class="headertext" valign="top" align="left" style="font-family: 'Roboto', Arial, sans-serif; font-size: 38px; color: #222222; font-weight: 900; mso-line-height-rule: exactly; line-height: 38px; text-transform: uppercase; text-align: center; padding:  0; margin: 0">sidecar dog tour&nbsp;2022
+                                      <td class="heading_32_28" valign="top" align="left" style="font-family: 'Roboto', Arial, sans-serif; font-size: 38px; color: #222222; font-weight: 900; mso-line-height-rule: exactly; line-height: 38px; text-transform: uppercase; text-align: center; padding:  0; margin: 0">sidecar dog tour&nbsp;2022
                                       </td>
                                     </tr>
                                   </table>
@@ -416,7 +407,7 @@
                       <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tr>
                           <td valign="top" align="left">
-                            <img class="headerstars" src="img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0">
+                            <img class="headerstars" src="http://www.sidecardog.com/img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0">
                           </td>
                         </tr>
                       </table>
@@ -429,11 +420,11 @@
                 <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
                   <tr>
                     <td valign="top" align="left">
-                      <a href="#"><img class="hide" alt="" width="600" height="237" src="img/bo-ben.png" border="0" style="width: 600px; height: 237px; margin: 0; border: none; outline: none; text-decoration: none; display: block; "></a>
+                      <a href="#"><img class="hide" alt="" width="600" height="237" src="http://www.sidecardog.com/img/bo-ben.png" border="0" style="width: 600px; height: 237px; margin: 0; border: none; outline: none; text-decoration: none; display: block; "></a>
                       <!-- VA! MS Conditional Block for Mobile Image -->
                       <!--[if !mso]><!-->
                       <span style="width:0; overflow:hidden; float:left; display:none; max-height:0; line-height:0;" class="mobileshow">
-                      <a href="#"><img class="mobileshow" alt="" width="318" height="199" src="img/bo-ben_mob.png" border="0" style="width: 318px; height: 199px; margin: 0; border: none; outline: none; text-decoration: none; display: block;" /></a>
+                      <a href="#"><img class="mobileshow" alt="" width="318" height="199" src="http://www.sidecardog.com/img/bo-ben_mob.png" border="0" style="width: 318px; height: 199px; margin: 0; border: none; outline: none; text-decoration: none; display: block;" /></a>
                       <!--</span>-->
                       <!--<![endif]-->
                     </td>
@@ -464,38 +455,38 @@
                             <!-- SUBTEXT -->
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                               <tr>
-                                <td class="subtext" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px;color: #D24152;">48</span> States!
+                                <td class="subhead_text" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
+                                <span class="subhead_text_pop" style="font-size: 32px; vertical-align: -2px;color: #D24152;">48</span> States!
                                 </td>
                               </tr>
                             </table>
                           </td>
                           <!-- SUBHEAD BULLET 1-->
                           <td valign="middle" align="center">
-                            <a href="#"><img class="baseball" src="img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
+                            <a href="#"><img class="baseball" src="http://www.sidecardog.com/img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
                           </td>
                           <!-- SUBHEAD Center-->
                           <td width="34%" valign="middle" align="center">
                             <!-- SUBTEXT -->
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                               <tr>
-                                <td class="subtext" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px; color: #D24152; ">30</span> Ballparks!
+                                <td class="subhead_text" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
+                                <span class="subhead_text_pop" style="font-size: 32px; vertical-align: -2px; color: #D24152; ">30</span> Ballparks!
                                 </td>
                               </tr>
                             </table>
                           </td>
                           <!-- SUBHEAD BULLET 2 -->
                           <td valign="middle" align="center">
-                            <a href="#"><img class="baseball" src="img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
+                            <a href="#"><img class="baseball" src="http://www.sidecardog.com/img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
                           </td>
                           <!-- SUBHEAD Right-->
                           <td width="27%" class="subhead" valign="middle" align="center">
                             <!-- SUBTEXT -->
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                               <tr>
-                                <td valign="top" class="subtext" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subtext-pop" style="font-size: 32px; vertical-align: -2px;color: #D24152; ">30,000</span> Miles!
+                                <td valign="top" class="subhead_text" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 900; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
+                                <span class="subhead_text_pop" style="font-size: 32px; vertical-align: -2px;color: #D24152; ">30,000</span> Miles!
                                 </td>
                               </tr>
                             </table>
@@ -522,10 +513,10 @@
                 <!-- DOGVENTURE -->
                 <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#484848" align="center">
                   <tr>
-                    <td class="map-bg" width="600" valign="top" height="460" bgcolor="#484848" background="img/map-bg.png">
+                    <td class="map-bg" width="600" valign="top" height="460" bgcolor="#484848" background="http://www.sidecardog.com/img/map-bg.png">
                       <!--[if gte mso 9]>
                       <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:420px;">
-                      <v:fill type="tile" src="img/map-bg.png" color="#484848" />
+                      <v:fill type="tile" src="http://www.sidecardog.com/img/map-bg.png" color="#484848" />
                       <v:textbox inset="0,0,0,0">
                       <![endif]-->
                       <div>
@@ -539,7 +530,7 @@
                           <!-- Spacing -->
                           <tr>
                             <td valign="top" align="center">
-                              <a href="#"><img class="img-gif" alt="The Great Dogventure" src="img/bo.gif" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="280" height="186" border="0"></a>
+                              <a href="#"><img class="img-gif" alt="The Great Dogventure" src="http://www.sidecardog.com/img/bo.gif" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="280" height="186" border="0"></a>
                             </td>
                           </tr>
                           <tr>
@@ -562,7 +553,7 @@
                                   </tr>
                                   <!-- Spacing -->
                                   <tr>
-                                    <td class="barks" width="100%" valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; line-height: 34px; color: #FFFFFF; font-weight: bold; text-align: center; text-transform: uppercase; margin: 0;">
+                                    <td class="body_22_18" width="100%" valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; line-height: 34px; color: #FFFFFF; font-weight: bold; text-align: center; text-transform: uppercase; margin: 0;">
                                       Bikes, Barks and Ballparks Across America!
                                     </td>
                                   </tr>
@@ -632,8 +623,8 @@
                                         </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td class="itsa" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 40px 0 40px;">
-                                          It's a <span class="pop-font" style="font-size: 32px; text-transform: uppercase; color: #D24152">motorbike!</span>
+                                        <td class="body_22_18" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 40px 0 40px;">
+                                          It's a <span class="text-pop" style="font-size: 32px; text-transform: uppercase; color: #D24152">motorbike!</span>
                                         </td>
                                       </tr>
                                       <!-- Spacing -->
@@ -642,8 +633,8 @@
                                       </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td class="itsa" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 50px 0 50px;">
-                                          It's a <span class="pop-font" style="font-size: 32px; text-transform: uppercase; color: #D24152">Baseball!</span>
+                                        <td class="body_22_18" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 50px 0 50px;">
+                                          It's a <span class="text-pop" style="font-size: 32px; text-transform: uppercase; color: #D24152">Baseball!</span>
                                         </td>
                                       </tr>
                                       <!-- Spacing -->
@@ -652,8 +643,8 @@
                                       </tr>
                                       <!-- Spacing -->
                                       <tr>
-                                        <td class="itsa" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 38px; text-align: center; ">
-                                          It's the </br> <span class="pop-font-plus" style="font-size: 34px; text-transform: uppercase; color: #D24152">SIDECAR DOG TOUR&nbsp;2020!</span>
+                                        <td class="body_22_18" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 38px; text-align: center; ">
+                                          It's the </br> <span class="text-pop-plus" style="font-size: 34px; text-transform: uppercase; color: #D24152">SIDECAR DOG TOUR&nbsp;2020!</span>
                                         </td>
                                       </tr>
                                       <!-- Spacing -->
@@ -687,7 +678,7 @@
                                                         <!-- Spacing -->
                                                         <tr>
                                                           <td valign="top" align="center">
-                                                            <a href="#"><img class="sidecar" src="img/sidecar.jpg" style="display: block; width: 260px; height: 300px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: solid #FFFFFF 10px;" width="260" height="300" border="0"></a>
+                                                            <a href="#"><img class="sidecar" src="http://www.sidecardog.com/img/sidecar.jpg" style="display: block; width: 260px; height: 300px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: solid #FFFFFF 10px;" width="260" height="300" border="0"></a>
                                                           </td>
                                                         </tr>
                                                         <!-- Spacing -->
@@ -731,7 +722,7 @@
                               </tr>
                               <!-- Spacing -->
                               <tr>
-                                <td class="everything" align="left" valign="top" style="font-family:  Arial, sans-serif; font-size:28px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 32px; text-align: center; ">
+                                <td class="body_22_18" align="left" valign="top" style="font-family:  Arial, sans-serif; font-size:28px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 32px; text-align: center; ">
                                   It's everything you could<span style="display: block;"> </span>want in a summer. <br />
                                 </td>
                               </tr>
@@ -741,7 +732,7 @@
                                 </tr>
                               <!-- Spacing -->
                               <tr>
-                                <td class="everything" align="left" valign="top" style="font-family:  Arial, sans-serif; font-size: 28px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 34px; text-align: center; ">
+                                <td class="body_22_18" align="left" valign="top" style="font-family:  Arial, sans-serif; font-size: 28px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 34px; text-align: center; ">
                                   Get ready to roll for the<span class="lb-mobile" style="display: block"> </span><span style="font-weight: bold; color: #FFFFFF">Ultimate Canine Road&nbsp;Trip!</span>
                                 </td>
                               </tr>
@@ -789,7 +780,7 @@
                         </tr>
                         <!-- Spacing -->
                         <tr>
-                          <td class="mapheading" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, Arial, sans-serif; font-size: 38px; color: #FFFFFF; font-weight: 900;  text-align: center; text-transform: uppercase; mso-line-height-rule: exactly; line-height: 38px; ">
+                          <td class="heading_34_26" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, Arial, sans-serif; font-size: 38px; color: #FFFFFF; font-weight: 900;  text-align: center; text-transform: uppercase; mso-line-height-rule: exactly; line-height: 38px; ">
                             <span class="pop-blue">The Big Apple</span><br/><span style="font-size: 85%; vertical-align: top">to</span><br/><span class="pop-red">La&nbsp;La&nbsp;Land</span>
                           </td>
                         </tr>
@@ -802,7 +793,7 @@
                   </tr>
                   <!-- Spacing -->
                   <tr>
-                    <td class="mapsubheading" align="left" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 26px; color: #FFFFFF; font-weight: bold;  text-align: center; text-transform: uppercase; mso-line-height-rule: exactly; line-height: 30px; ">
+                    <td class="body_22_18" align="left" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 26px; color: #FFFFFF; font-weight: bold;  text-align: center; text-transform: uppercase; mso-line-height-rule: exactly; line-height: 30px; ">
                       and every ballpark<br/>in&nbsp;between!
                     </td>
                   </tr>
@@ -818,7 +809,7 @@
                             <table class="devicewidth" align="center" role="presentation" width="500"  border="0" cellpadding="0" cellspacing="0">
                               <tr>
                                 <td  align="center"  valign="top"  >
-                                  <img class="map" width="500" height="317" alt="Sidecar Dog Tour 2022" src="img/ballparks.png"  style="border: none; outline: none; text-decoration: none; display: block;" />
+                                  <img class="map" width="500" height="317" alt="Sidecar Dog Tour 2022" src="http://www.sidecardog.com/img/ballparks.png"  style="border: none; outline: none; text-decoration: none; display: block;" />
                                 </td>
                               </tr>
                             </table>
@@ -894,7 +885,7 @@
                                                       <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" class="" align="right">
                                                         <tr>
                                                           <td align="center" valign="top" style="">
-                                                            <img class="rtl-img" width="280" height="186" src="img/bo-timessquare-500X333.jpg" alt="Sidecar Dog Tour 2022" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none;" border="0"  />
+                                                            <img class="rtl-img" width="280" height="186" src="http://www.sidecardog.com/img/bo-timessquare-500X333.jpg" alt="Sidecar Dog Tour 2022" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none;" border="0"  />
                                                           </td>
                                                         </tr>
                                                         <!-- Spacing -->
@@ -957,7 +948,7 @@
                                                         </tr>
                                                         <!-- Spacing -->                                
                                                         <tr>
-                                                          <td class="bodytext" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style:normal; font-weight:normal; color:#6b6b6b; line-height: 21px; text-align: left; ">
+                                                          <td class="body_19_17" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style:normal; font-weight:normal; color:#6b6b6b; line-height: 21px; text-align: left; ">
                                                             The <span class="pop-blue">Sidecar Dog Tour 2022</span> kicks off at the Center of the Known Universe, Times Square, New York City on Home Opening Day, 2022. From there, we ride to Yankee Stadium for peanuts and Cracker Jack!
                                                           </td>
                                                         </tr>
@@ -1032,7 +1023,7 @@
                                                       <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" class="" align="center">
                                                         <tr>
                                                           <td align="center" valign="top" style="padding-left: 0;">
-                                                            <img class="rtl-img" src="img/bo-jupiter-500X333.jpg" width="280" height="186" alt="Sidecar Dog Tour 2022" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none;" border="0">
+                                                            <img class="rtl-img" src="http://www.sidecardog.com/img/bo-jupiter-500X333.jpg" width="280" height="186" alt="Sidecar Dog Tour 2022" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none;" border="0">
                                                           </td>
                                                         </tr>
                                                         <!-- Spacing -->
@@ -1101,7 +1092,7 @@
                                                         </tr>
                                                         <!-- Spacing -->                                
                                                         <tr>
-                                                          <td class="bodytext" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style:normal; font-weight:normal; color:#6b6b6b; line-height: 21px; text-align: left; ">
+                                                          <td class="body_19_17" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style:normal; font-weight:normal; color:#6b6b6b; line-height: 21px; text-align: left; ">
                                                             The <span class="pop-blue">Sidecar Dog Tour 2022</span> wraps up after the final L.A. home game at Dodger Stadium. Then we head to the nearest dog-friendly beach for some Frisbee, fun and well-deserved treats!
                                                           </td>
                                                         </tr>
@@ -1158,7 +1149,7 @@
                       <table class="devicewidthinner" bgcolor="#FFFFFF" align="center" width="560" role="presentation" border="0" cellspacing="0" cellpadding="0">
                         <!-- Spacing -->
                         <tr>
-                          <td class="mobspac_20_15" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; ">&nbsp;</td>
+                          <td class="mobspac_15_10" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; ">&nbsp;</td>
                         </tr>
                         <!-- Spacing -->
                         <tr>
@@ -1170,7 +1161,7 @@
                               </tr>
                               <!-- Spacing -->
                               <tr>
-                                <td class="comealong" align="center" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 32px; color: #314F6E; font-weight: bold; text-align: center; mso-line-height-rule: exactly; line-height: 36px; text-transform: uppercase">
+                                <td class="heading_32_22" align="center" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 32px; color: #314F6E; font-weight: bold; text-align: center; mso-line-height-rule: exactly; line-height: 36px; text-transform: uppercase">
                                   Come Along
                                 </td>
                               </tr>
@@ -1184,7 +1175,7 @@
                               <!-- Spacing -->
                               <tr>
                                 <td align="center"  valign="top"  >
-                                  <img class="rig-icon" width="120" src="img/rig-icon.png" alt="Sidecar Dog Tour 2022" style="width: 120px; height: auto; border: none; outline: none; text-decoration: none; display: block;"  />
+                                  <img class="rig-icon" width="120" src="http://www.sidecardog.com/img/rig-icon.png" alt="Sidecar Dog Tour 2022" style="width: 120px; height: auto; border: none; outline: none; text-decoration: none; display: block;"  />
                                 </td>
                               </tr>
                             </table>
@@ -1196,7 +1187,7 @@
                               </tr>
                               <!-- Spacing -->
                               <tr>
-                                <td class="comealong" align="center" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 32px; color: #314F6E; font-weight: bold; text-align: center; mso-line-height-rule: exactly; line-height: 36px; text-transform: uppercase">
+                                <td class="heading_32_22" align="center" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 32px; color: #314F6E; font-weight: bold; text-align: center; mso-line-height-rule: exactly; line-height: 36px; text-transform: uppercase">
                                   For The Ride!
                                 </td>
                               </tr>
@@ -1244,11 +1235,11 @@
                                         <table class="col-3" width="185" align="left" role="presentation" border="0" cellspacing="0" cellpadding="0">
                                           <!-- Spacing -->
                                           <tr>
-                                            <td class="mobspac_20_15" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                            <td class="mobspac_15_10" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                           </tr>
                                           <!-- Spacing -->
                                           <tr>
-                                            <td class="comealong" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
+                                            <td class="heading_32_22" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
                                               Songs!
                                             </td>
                                           </tr>
@@ -1259,7 +1250,7 @@
                                           <!-- Spacing -->
                                           <tr>
                                             <td align="center" valign="top">
-                                              <img class="media-icon"  height="81" width="160" src="img/icon-music.png" alt="Sidecar Dog Tour 2022" border="0" style="width: 160px; height: 81px; border: none; outline: none; text-decoration: none; display: block;"  />
+                                              <img class="media-icon"  height="81" width="160" src="http://www.sidecardog.com/img/icon-music.png" alt="Sidecar Dog Tour 2022" border="0" style="width: 160px; height: 81px; border: none; outline: none; text-decoration: none; display: block;"  />
                                             </td>
                                           </tr>
                                         </table>
@@ -1267,11 +1258,11 @@
                                         <table class="col-3" width="185" align="left" role="presentation" border="0" cellspacing="0" cellpadding="0">
                                           <!-- Spacing -->
                                           <tr>
-                                            <td class="mobspac_25_20" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                            <td class="mobspac_15_10" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                           </tr>
                                           <!-- Spacing -->
                                           <tr>
-                                            <td class="comealong" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
+                                            <td class="heading_32_22" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
                                               Pix!
                                             </td>
                                           </tr>
@@ -1282,7 +1273,7 @@
                                           <!-- Spacing -->
                                           <tr>
                                             <td align="center"  valign="top"  >
-                                              <img class="media-icon"  width="160" height="81" src="img/icon-photo.png" border="0" style="width: 160px; height: 81px; border: none; outline: none; text-decoration: none; display: block;"  />
+                                              <img class="media-icon"  width="160" height="81" src="http://www.sidecardog.com/img/icon-photo.png" border="0" style="width: 160px; height: 81px; border: none; outline: none; text-decoration: none; display: block;"  />
                                             </td>
                                           </tr>
                                         </table>
@@ -1290,11 +1281,11 @@
                                         <table class="col-3" class="devicewidthinner" align="left" width="185"  role="presentation" border="0" cellpadding="0" cellspacing="0">
                                           <!-- Spacing -->
                                           <tr>
-                                            <td class="mobspac_25_20" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                            <td class="mobspac_15_10" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                                           </tr>
                                           <!-- Spacing -->
                                           <tr>
-                                            <td class="comealong" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
+                                            <td class="heading_32_22" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
                                               Videos!
                                             </td>
                                           </tr>
@@ -1306,7 +1297,7 @@
                                           <tr>
                                             <td align="center"  valign="top"  >
     
-                                              <img class="media-icon" src="img/icon-video.png" width="160" height="81" alt="Sidecar Dog Tour 2022" style="display: block; width: 160px; height: 81px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none; " border="0">
+                                              <img class="media-icon" src="http://www.sidecardog.com/img/icon-video.png" width="160" height="81" alt="Sidecar Dog Tour 2022" style="display: block; width: 160px; height: 81px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none; " border="0">
                                             </td>
                                           </tr>
                                         </table>
@@ -1318,7 +1309,7 @@
                               </tr>
                               <!-- Spacing -->
                               <tr>
-                                <td height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                <td height="29" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
                               </tr>
                               <!-- Spacing -->
                             </table>
@@ -1410,7 +1401,7 @@
                                                     <td align="center" valign="top">
                                                       <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
                                                         <tr>
-                                                          <td class="questionstext" align="center" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
+                                                          <td class="body_19_17" align="center" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
                                                             Our trained specialists are available 24/7 to answer your questions about the <span class="pop-blue">sidecar&nbsp;dog tour&nbsp;2020</span>.
                                                             <!-- /.pop-blue -->
                                                           </td>
@@ -1447,7 +1438,7 @@
                                                         <!-- Spacing -->
                                                         <tr>
                                                           <td valign="bottom" align="center">
-                                                            <a href="#"><img class="info-icon" src="img/info-icon.png" style="display: block; width: 160px; height: 96px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="160" height="96" border="0"></a>
+                                                            <a href="#"><img class="info-icon" src="http://www.sidecardog.com/img/info-icon.png" style="display: block; width: 160px; height: 96px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="160" height="96" border="0"></a>
                                                           </td>
                                                         </tr>
                                                       </table>
@@ -1518,7 +1509,7 @@
                                                       <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" class="" align="center">
                                                         <tr>
                                                           <td align="center"  valign="top"  >
-                                                            <img class="email" width="280" src="img/email.jpg" border="0" alt="Sidecar Dog Tour 2022" style="border: none; outline: none; text-decoration: none; display: block;" />
+                                                            <img class="email" width="280" src="http://www.sidecardog.com/img/email.jpg" border="0" alt="Sidecar Dog Tour 2022" style="border: none; outline: none; text-decoration: none; display: block;" />
                                                           </td>
                                                         </tr>
                                                       </table>
@@ -1551,7 +1542,7 @@
                                                         <!-- Spacing -->
 
                                                         <tr>
-                                                          <td class="questionstext" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
+                                                          <td class="body_19_17" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
                                                             Visit us at <a href="http://www.sidecardog.com" style="color: #D24152; text-decoration: underline">sidecardog.com</a> for the most up-to-date info about the tour, our objectives and when we're be rolling through your town!
                                                             <!-- /.pop-blue -->
                                                         </tr>
@@ -1560,7 +1551,7 @@
                                                         </tr>
                                                         <!-- Spacing -->
                                                         <tr>
-                                                          <td class="questionstext" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
+                                                          <td class="body_19_17" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
                                                             Or, email us at <a href="mailto:info@sidecardog.com" style="color: #D24152; text-decoration: underline">info@sidecardog.com</a> for more information.
                                                           </td>
                                                         </tr>
@@ -1630,7 +1621,7 @@
                         <!-- Spacing -->
                         <tr>
                           <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 19px; text-align: left;">
-                            All text and graphics on this website were created by Van Albert and are provided exclusively for educational purposes. The images, icons and text displayed on this website and contained in the sample email are property of Van Albert and sidecardog.com. 
+                            All text and graphics on this website and the associated email were created by Van Albert and are provided exclusively for educational purposes. The images, icons and text displayed on this website and contained in the sample email are property of Van Albert and SIDECARDOG.COM. 
                           </td>
                         </tr>
                         <tr>
@@ -1681,7 +1672,7 @@
                         <!-- Spacing -->
                         <tr>
                           <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 19px; text-align: left;">
-                            This content is provided as an HTML email example for educational purposes and may be freely downloaded for non-commerical use. Users are free to adapt and recycle sections of HTML code including the header, CSS styling and individual HTML elements and attributes without restriction. All images and all text relating to the 'Sidecar Dog Tour 2022' are provided under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license (see above) and may be shared exclusively for informational and non-commercial purposes. Sharing of adaptations of the images or other content or commercial usage thereof is prohibited.
+                            This content is provided as an HTML email example for educational purposes and may be freely downloaded for non-commerical use. Users are free to adapt and recycle sections of HTML code including the header, CSS styling and individual HTML elements and attributes without restriction. All images and all text relating to the 'Sidecar Dog Tour 2022' are provided under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license (see above) and may be shared exclusively for informational and non-commercial purposes. Display or online publication of this content on third party websites or tutorials without the written consent of the copyright holder is prohibited. Sharing of adaptations of the images or other content or commercial usage thereof is prohibited.
                           </td>
                         </tr>
                         <!-- Spacing -->
