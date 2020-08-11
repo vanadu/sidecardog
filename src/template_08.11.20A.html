@@ -1,28 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-  <title>Sidecar Dog Tour 2022</title>
+  <title>Template - Sidecar Dog Tour 2022</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Cerberus: Use the latest (edge) version of IE rendering engine -->
   <meta name="x-apple-disable-message-reformatting">  <!-- Cerberus: Disable auto-scale in iOS 10 Mail entirely -->
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Cerberus: Tell iOS not to automatically link certain text strings. -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"><!-- VA! Use Roboto -->
   <title></title> <!-- Cerbrerus: The title tag shows in email notifications, like Android 4.4. -->
-  <!-- VA! Below is needed to ensure PNGs don't scale at 120dpi display in Outlook on Windows -->
-  <!--[if gte mso 7]><xml>
-  <o:OfficeDocumentSettings>
-    <o:AllowPNG/>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-  </o:OfficeDocumentSettings>
-  </xml><![endif]-->
-  <!-- VA! The below is required to ensure Outlook falls back to the proper font instead of defaulting to Times Roman. Include class="fallback-font" in wherever you use a web font -->
+  <!-- Outlook-specific fallback font instruction.  -->
   <!--[if mso]>
-  <style type=”text/css”>
-  .fallback-font {
-  font-family: Arial, sans-serif;
-  }
+  <style type="text/css">
+  body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
   </style>
   <![endif]-->
+  <!-- Ensure PNGs don't scale at 120dpi display in Outlook on Windows -->
+<!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
 
   <style type="text/css">
     body {
@@ -55,7 +55,7 @@
     }
 
     /* Desktop / Large Tablet Styles */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 602px) {
       /* !VA I am not sure what the fullgmail style does. Inclined to delete it */
       *.full {
         width:100% !important;
@@ -95,13 +95,6 @@
         height:auto !important;
       }
     }
-    /* End of Synthroid Email Styles */
-
-    /* SDEmail Styles */
-    .devred {border: 1px solid red !important}
-    .devblu {border: 1px solid blue !important; }
-    .devmag {border: 1px solid magenta !important; }
-
 
     /* Client-specific Styles */
     #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
@@ -135,36 +128,35 @@
     /*DEV STYLES*/
     /* !VA Uncomment this to make TD gutters visible for dev */
      /* .gutterleft, .gutterright { border: 1px solid red !important;} */ */
-
     .dvgrn {border: 1px solid green }
     .dvred {border: 1px solid red}
     .dvblu {border: 1px solid blue }
 
-      /* LITMUS Style */
-      .img-fluid {
-        max-width: 100% !important;
+    /* LITMUS Styles */
+    .img-fluid {
+      max-width: 100% !important;
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .responsive-table {
         width: 100% !important;
-        height: auto !important;
-      }
+    }
 
-      .responsive-table {
-          width: 100% !important;
-      }
+    .wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    /* End LITMUS Style */
 
-      .wrapper {
-          width: 100% !important;
-        	max-width: 100% !important;
-      }
-      /* End LITMUS Style */
+    /* GLOBAL Styles */
+    span.pop-red { color: #D24152 !important; font-weight: 700 !important; text-transform: uppercase !important; }
+    span.pop-blue { color: #314F6E !important; font-weight: 700 !important; text-transform: uppercase !important; } 
 
-      /* Start GLOBAL Styles */
-      span.pop-red { color: #D24152 !important; font-weight: 700 !important; text-transform: uppercase !important; }
-      span.pop-blue { color: #314F6E !important; font-weight: 700 !important; text-transform: uppercase !important; } 
+    /* Moving this out of media queries because it might break Gmail or Yahoo mail */
+    a[href^="tel"], a[href^="sms"] { color: #0a8cce; /* or whatever your want */ pointer-events: none; cursor: default; }
 
-      /* Moving this out of media queries because it might break Gmail or Yahoo mail */
-      a[href^="tel"], a[href^="sms"] { color: #0a8cce; /* or whatever your want */ pointer-events: none; cursor: default; }
-
-      .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0a8cce !important; pointer-events: auto; cursor: default; }
+    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0a8cce !important; pointer-events: auto; cursor: default; }
 
     /* Large Phone Styles - Targeting iPhone 11, XR, 6 Plus, 6S Plus, 7 Plus, 8 Plus i.e. 414px logical resolution to 599px */
     @media only screen and (max-width:599px) {
@@ -182,6 +174,7 @@
       td.mobspac_07_04 { height: 7px !important; }
       td.mobspac_10_05 { height:10px !important; }
       td.mobspac_12_07 { height:12px !important; }
+      td.mobspac_10_07 { height:10px !important; }
       td.mobspac_15_10 { height:15px !important; }
       td.mobspac_20_10 { height:20px !important; }
       td.mobspac_20_15 { height:20px !important; }
@@ -190,6 +183,8 @@
       /* lps */
       /* Headings */
       td.heading_36_28 { font-size: 36px !important; line-height: 40px !important;}
+      td.heading_36_32 { font-size: 36px !important; line-height: 36px !important;}
+      td.heading_36_30 { font-size: 36px !important; line-height: 36px !important;}
       td.heading_34_26 { font-size: 34px !important; line-height: 38px !important;}
       td.heading_32_30 { font-size: 32px !important; line-height: 34px !important;}
       td.heading_32_28 { font-size: 32px !important; line-height: 34px !important;}
@@ -208,8 +203,9 @@
 
       /* HEADER */
       img.headerstars { width: 412px !important; height: 20px !important; }
-      td.headerstripe { width: 60px !important; height: 18px !important; }
-      table.headertextwrapper { width: 292px !important; }
+      .headerstripe_w { width: 60px !important; }
+      table.headerstripes { width: 60px !important; height: 18px !important; }
+      table.headerheadline_w { width: 292px !important; }
       /* SUBHEAD */
       img.baseball { width: 25px !important; height: 25px !important; }
       /* DOGVENTURE */
@@ -251,6 +247,7 @@
       td.mobspac_04_02 { height: 2px !important; }
       td.mobspac_07_04 { height: 4px !important; }
       td.mobspac_10_05 { height: 5px !important; }
+      td.mobspac_10_07 { height:7px !important; }
       td.mobspac_12_07 { height:7px !important; }
       td.mobspac_20_10 { height:10px !important; }
       td.mobspac_20_15 { height:15px !important; }
@@ -259,6 +256,7 @@
       /* sps */
       /* Headings */
       td.heading_36_28 { font-size: 28px !important; line-height: 32px !important;}
+      td.heading_36_30 { font-size: 30px !important; line-height: 30px !important;}
       td.heading_34_26 { font-size: 26px !important; line-height: 30px !important;}
       td.heading_32_22 { font-size: 22px !important; line-height: 24px !important;}
       td.heading_32_28 { font-size: 28px !important; line-height: 31px !important;}
@@ -275,8 +273,9 @@
 
       /* HEADER */
       img.headerstars { width: 318px !important; height: 15px !important; }
-      td.headerstripe { width: 30px !important; height: 15px !important; }
-      table.headertextwrapper { width: 258px !important; }
+      .headerstripe_w { width: 40px !important; }
+      .headerstripe_h { height: 15px !important; }
+      table.headerheadline_w { width: 238px !important; }
       /* SUBHEAD */
       img.baseball { width: 20px !important; height: 20px !important; }
       td.subheadspacing { height: 3px !important; }
@@ -301,1424 +300,33 @@
 
     }
   </style>
-  <!-- VA! Outlook-specific fallback font instruction -->
+  <!-- Outlook-specific fallback font instruction.  -->
   <!--[if mso]>
   <style type="text/css">
   body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
   </style>
   <![endif]-->
+  <!-- VA! Below is needed to ensure PNGs don't scale at 120dpi display in Outlook on Windows -->
+<!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
 </head>
 
   <body>
     <!-- VA! Changed min-width to 602px to accomodate l/r border -->
-    <table class="fullgmail" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border: 0; min-width: 602px;">
+    <!-- VA! I don't know what's right anymore - it was tested with min-width: 600px -->
+    <table class="fullgmail header-bg" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border: 0; min-width: 600px;">
       <tr>
-        <td align="center" valign="top">
-          
-          <!-- VA! CONTENT WRAPPER - Changed width to 602 to accomodate l/r border. -->
-          <table width="602" class="devicewidth" align="center" bgcolor="#FFFFFF" border="0" role="presentation" cellpadding="0" cellspacing="0" >
-            <tr>
-              <td align="center" valign="top" style="border-left: 1px solid #959595; border-right: 1px solid #959595;">
-                
-
-                <!-- HEADER WRAPPER-->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                  <tr>
-                    <td valign="top" align="left">
-                      <!-- Header Stars Top -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tr>
-                          <td valign="top" align="left">
-                            <img class="headerstars" src="http://www.sidecardog.com/img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0">
-                          </td>
-                        </tr>
-                      </table>
-                      <!-- Header Content Wrap -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tr>
-                          <td valign="top" align="left">
-
-                            <!-- Header Stripes Left -->
-                            <table class="headerstripes" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left">
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#FFFFFF" align="left">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#FFFFFF" align="left">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
-                              </tr>
-                            </table>
-                            
-                            <!-- Header Content -->
-                            <table class="headertextwrapper" role="presentation" width="416" cellspacing="0" cellpadding="0" border="0" align="left">
-                              <tr>
-                                <td valign="top" align="left">
-                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="right">
-                                    <!-- Spacing -->
-                                    <tr>
-                                      <td height="10" class="mobspac_12_07" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                    </tr>
-                                    <!-- Spacing -->
-                                    <tr>
-                                      <td class="heading_32_28" valign="top" align="left" style="font-family: 'Roboto', Arial, sans-serif; font-size: 38px; color: #222222; font-weight: 700; mso-line-height-rule: exactly; line-height: 38px; text-transform: uppercase; text-align: center; padding:  0; margin: 0">sidecar dog tour&nbsp;2022
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-
-                            <!-- Header Stripes Right -->
-                            <table class="headerstripes" role="presentation" cellspacing="0" cellpadding="0" border="0" align="right">
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#FFFFFF" align="left">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#FFFFFF" align="left">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="headerstripe" width="90" valign="top" height="18" bgcolor="#D24152" align="left">
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <!-- Header Stars Bottom -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tr>
-                          <td valign="top" align="left">
-                            <img class="headerstars" src="http://www.sidecardog.com/img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0">
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!-- /HEADER WRAPPER -->
-
-                <!-- HERO WRAPPER-->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                  <tr>
-                    <td valign="top" align="left">
-                      <a href="#"><img class="hide" alt="" width="600" height="237" src="http://www.sidecardog.com/img/bo-ben.png" border="0" style="width: 600px; height: 237px; margin: 0; border: none; outline: none; text-decoration: none; display: block; "></a>
-                      <!-- VA! MS Conditional Block for Mobile Image -->
-                      <!--[if !mso]><!-->
-                      <span style="width:0; overflow:hidden; float:left; display:none; max-height:0; line-height:0;" class="mobileshow">
-                      <a href="#"><img class="mobileshow" alt="" width="318" height="199" src="http://www.sidecardog.com/img/bo-ben_mob.png" border="0" style="width: 318px; height: 199px; margin: 0; border: none; outline: none; text-decoration: none; display: block;" /></a>
-                      <!--</span>-->
-                      <!--<![endif]-->
-                    </td>
-                  </tr>
-                </table>
-                <!-- /HERO WRAPPER -->
-
-                <!-- SUBHEAD WRAPPER-->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                  <!-- RED BAR -->
-                  <tr>
-                    <td width="100%" valign="middle" height="10" bgcolor="#D24152" align="left">
-                    </td>
-                  </tr>
-                  <!-- SUBHEAD CONTENT -->
-                  <tr>
-                    <td valign="top" align="left">
-                      <!-- SUBHEAD CONTENT WRAPPER -->
-                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="10" class="mobspac_04_02" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <!-- SUBHEAD Left-->
-                          <td width="23%" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td class="subhead_text" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 700; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subhead_text_pop" style="font-size: 32px; vertical-align: -2px;color: #D24152;">48</span> States!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- SUBHEAD BULLET 1-->
-                          <td valign="middle" align="center">
-                            <a href="#"><img class="baseball" src="http://www.sidecardog.com/img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
-                          </td>
-                          <!-- SUBHEAD Center-->
-                          <td width="34%" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td class="subhead_text" valign="top" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 700; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subhead_text_pop" style="font-size: 32px; vertical-align: -2px; color: #D24152; ">30</span> Ballparks!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- SUBHEAD BULLET 2 -->
-                          <td valign="middle" align="center">
-                            <a href="#"><img class="baseball" src="http://www.sidecardog.com/img/baseball.png" style="display: block; width: 40px; height: 40px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="40" height="40" border="0"></a>
-                          </td>
-                          <!-- SUBHEAD Right-->
-                          <td width="27%" class="subhead" valign="middle" align="center">
-                            <!-- SUBTEXT -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                              <tr>
-                                <td valign="top" class="subhead_text" align="center" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; font-weight: 700; color:#314F6E; line-height:32px; text-align: center; text-transform: uppercase; padding: 0 15px;">
-                                <span class="subhead_text_pop" style="font-size: 32px; vertical-align: -2px;color: #D24152; ">30,000</span> Miles!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="7" class="mobspac_04_02" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                      </table>
-                    </td>
-                  </tr>
-                  <!-- BLUE BAR -->
-                  <tr>
-                    <td width="100%" valign="top" height="10" bgcolor="#314F6E" align="center">
-                    </td>
-                  </tr>
-                  
-                </table>
-                <!-- /SUBHEAD WRAPPER-->
-
-                <!-- DOGVENTURE -->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#484848" align="center">
-                  <tr>
-                    <td class="map-bg" width="600" valign="top" height="460" bgcolor="#484848" background="http://www.sidecardog.com/img/map-bg.png">
-                      <!--[if gte mso 9]>
-                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:420px;">
-                      <v:fill type="tile" src="http://www.sidecardog.com/img/map-bg.png" color="#484848" />
-                      <v:textbox inset="0,0,0,0">
-                      <![endif]-->
-                      <div>
-                      
-                        <!-- FOREGROUND CONTENT WRAPPER -->
-                        <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                          <!-- Spacing -->
-                          <tr>
-                            <td class="mobspac_25_20" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                          </tr>
-                          <!-- Spacing -->
-                          <tr>
-                            <td valign="top" align="center">
-                              <a href="#"><img class="img-gif" alt="The Great Dogventure" src="http://www.sidecardog.com/img/bo.gif" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="280" height="186" border="0"></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td valign="top" align="center">
-                              <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                <!-- Spacing -->
-                                <tr>
-                                  <td class="mobspac_25_20" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                </tr>
-                                <!-- Spacing -->
-                                <table class="devicewidthinner" role="presentation" width="500" cellspacing="0" cellpadding="0" border="0" align="center">
-                                  <tr>
-                                    <td class="dogventuretext" width="100%" valign="top" align="center" style="display: block; margin: 0 auto; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 46px; line-height: 48px; color: #D24152; font-weight: 700; text-align: center; text-transform: uppercase; ">
-                                      The Great Dogventure
-                                    </td>
-                                  </tr>
-                                  <!-- Spacing -->
-                                  <tr>
-                                    <td class="mobspac_20_15" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                  </tr>
-                                  <!-- Spacing -->
-                                  <tr>
-                                    <td class="body_22_18" width="100%" valign="top" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; line-height: 34px; color: #FFFFFF; font-weight: bold; text-align: center; text-transform: uppercase; margin: 0;">
-                                      Bikes, Barks and Ballparks Across America!
-                                    </td>
-                                  </tr>
-                                  <!-- Spacing -->
-                                  <tr>
-                                    <td class="mobspac_25_20" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                  </tr>
-                                  <!-- Spacing -->
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
-                      <!--[if gte mso 9]>
-                        </v:textbox>
-                      </v:rect>
-                      <![endif]-->
-                    </td>
-                  </tr>
-                </table>
-                <!-- /DOGVENTURE -->
+        <td align="center" valign="top" style="width: 600px;">
+          <!-- CONTENT WRAPPER -->
 
 
-                
-                <!-- DIVIDER -->
-                <table width="600" cellpadding="0" cellspacing="0" role="presentation" border="0" align="center" class="devicewidth">
-                  <tr>
-                    <td class="redstripe" bgcolor="#D24152" height="4" width="100%" style="font-size: 1px; line-height: 1px; color: #D24152; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="whitestripe" height="4" bgcolor="#FFFFFF" style="font-size: 1px; line-height: 1px; color: #FFFFFF; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="redstripe" height="4" bgcolor="#D24152" style="font-size: 1px; line-height: 1px; color: #D24152; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                </table>
-                <!-- /DIVIDER -->  
-
-                <!-- ITSA -->
-                <table class="devicewidth" width="600" bgcolor="#314F6E" width="100%" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td align="center" style="padding: 0;" class="section-padding">
-                      <!--[if (gte mso 9)|(IE)]>
-                      <table align="center" border="0" cellspacing="0" cellpadding="0" width="560">
-                      <tr>
-                      <td align="center" valign="top" width="560">
-                      <![endif]-->
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="max-width: 560px;" class="responsive-table">
-                        <tr>
-                          <td align="center" height="100%" valign="top" width="100%">
-                            <!--[if (gte mso 9)|(IE)]>
-                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="560">
-                            <tr>
-                            <td align="center" valign="top" width="560">
-                            <![endif]-->
-                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="max-width:560px;">
-                              <tr>
-                                <td align="center" valign="top" style="font-size:0;" class="">
-                                  <!--[if (gte mso 9)|(IE)]>
-                                  <table align="center" border="0" cellspacing="0" cellpadding="0" width="560">
-                                  <tr>
-                                  <td align="left" valign="top" width="280">
-                                  <![endif]-->
-                                  <div style="display:inline-block; max-width:50%; min-width:280px; vertical-align:top; width:100%;" class="wrapper">
-                                    <table style="max-width:280px; " class="wrapper" width="100%" align="left" role="presentation" cellpadding="0" cellspacing="0" border="0">
-                                      <!-- Spacing -->
-                                        <tr>
-                                          <td class="mobspac_20_15" height="35" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                        </tr>
-                                      <!-- Spacing -->
-                                      <tr>
-                                        <td class="body_22_18" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 40px 0 40px;">
-                                          It's a <span class="text-pop" style="font-size: 32px; text-transform: uppercase; color: #D24152">motorbike!</span>
-                                        </td>
-                                      </tr>
-                                      <!-- Spacing -->
-                                      <tr>
-                                        <td class="mobspac_10_05" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                      </tr>
-                                      <!-- Spacing -->
-                                      <tr>
-                                        <td class="body_22_18" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 32px; text-align: center; padding: 0 50px 0 50px;">
-                                          It's a <span class="text-pop" style="font-size: 32px; text-transform: uppercase; color: #D24152">Baseball!</span>
-                                        </td>
-                                      </tr>
-                                      <!-- Spacing -->
-                                      <tr>
-                                        <td class="mobspac_10_05" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                      </tr>
-                                      <!-- Spacing -->
-                                      <tr>
-                                        <td class="body_22_18" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 26px; font-weight: bold; color: #FFFFFF; line-height: 38px; text-align: center; ">
-                                          It's the </br> <span class="text-pop-plus" style="font-size: 34px; text-transform: uppercase; color: #D24152">SIDECAR DOG TOUR&nbsp;2020!</span>
-                                        </td>
-                                      </tr>
-                                      <!-- Spacing -->
-                                      <tr>
-                                        <td class="mobspac_04_02" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                      </tr>
-                                      <!-- Spacing -->
-                                    </table>
-                                  </div>
-                                  <!--[if (gte mso 9)|(IE)]>
-                                  </td>
-                                  <td width="20" style="font-size: 1px;">&nbsp;</td>
-                                  <td align="right" valign="top" width="260">
-                                  <![endif]-->
-                                  <div style="display:inline-block; max-width:50%; min-width:280px; vertical-align:top; width:100%;" class="wrapper">
-                                    <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                      <tr>
-                                        <td>
-                                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:280px; " class="wrapper" role="presentation">
-                                            <tr>
-                                              <td align="center" valign="top">
-
-                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                  <tr>
-                                                    <td align="left" valign="top">
-                                                      <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td class="mobspac_25_20" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td valign="top" align="center">
-                                                            <a href="#"><img class="sidecar" src="http://www.sidecardog.com/img/sidecar.png" style="display: block; width: 260px; height: 300px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: solid #FFFFFF 10px;" width="260" height="300" border="0"></a>
-                                                          </td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td class="mobspac_25_20" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                      </table>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if (gte mso 9)|(IE)]>
-                                  </td>
-                                  </tr>
-                                  </table>
-                                  <![endif]-->
-                                </td>
-                              </tr>
-                            </table>
-                            <!--[if (gte mso 9)|(IE)]>
-                            </td>
-                            </tr>
-                            </table>
-                            <![endif]-->
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="left" valign="top">
-                            <table width="100%" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" style="max-width: 560px">
-                              <!-- Spacing -->
-                              <tr>
-                                <td class="mobspac_07_04" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                              </tr>
-                              <!-- Spacing -->
-                              <tr>
-                                <td class="body_22_18" align="left" valign="top" style="font-family:  Arial, sans-serif; font-size:28px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 32px; text-align: center; ">
-                                  It's everything you could<span style="display: block;"> </span>want in a summer. <br />
-                                </td>
-                              </tr>
-                              <!-- Spacing -->
-                                <tr>
-                                  <td class="mobspac_10_05" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                </tr>
-                              <!-- Spacing -->
-                              <tr>
-                                <td class="body_22_18" align="left" valign="top" style="font-family:  Arial, sans-serif; font-size: 28px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 34px; text-align: center; ">
-                                  Get ready to roll for the<span class="lb-mobile" style="display: block"> </span><span style="font-weight: bold; color: #FFFFFF">Ultimate Canine Road&nbsp;Trip!</span>
-                                </td>
-                              </tr>
-                              <!-- Spacing -->
-                                <tr>
-                                  <td class="mobspac_25_20" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                </tr>
-                              <!-- Spacing -->
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if (gte mso 9)|(IE)]>
-                      </td>
-                      </tr>
-                      </table>
-                      <![endif]-->
-                  </td>
-                  </tr>
-                </table>
-                <!-- /ITSA -->
-
-                <!-- WHITE-BLUE DIVIDER -->
-                <table width="600" cellpadding="0" cellspacing="0" role="presentation" border="0" align="center" class="devicewidth">
-                  <tr>
-                    <td class="whitestripe" bgcolor="#FFFFFF" height="4" width="100%" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="bluestripe" height="4" bgcolor="#314F6E" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="whitestripe" height="4" bgcolor="#FFFFFF" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                </table>
-                <!-- /WHITE-BLUE DIVIDER -->  
-
-                <!-- MAP -->
-                <table class="devicewidth" width="600" align="center" bgcolor="#959595" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td align="left" valign="top">
-                      <table class="devicewidthinner" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="mobspac_20_15" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="heading_34_26" align="left" valign="top" style="font-family: 'Roboto', Arial, Helvetica, Arial, sans-serif; font-size: 38px; color: #FFFFFF; font-weight: 700;  text-align: center; text-transform: uppercase; mso-line-height-rule: exactly; line-height: 38px; ">
-                            <span class="pop-blue">The Big Apple</span><br/><span style="font-size: 85%; vertical-align: top">to</span><br/><span class="pop-red">La&nbsp;La&nbsp;Land</span>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <!-- Spacing -->
-                  <tr>
-                    <td class="mobspac_10_05" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <!-- Spacing -->
-                  <tr>
-                    <td class="body_22_18" align="left" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 26px; color: #FFFFFF; font-weight: bold;  text-align: center; text-transform: uppercase; mso-line-height-rule: exactly; line-height: 30px; ">
-                      and every ballpark<br/>in&nbsp;between!
-                    </td>
-                  </tr>
-                  <!-- Spacing -->
-                  <tr>
-                    <td class="mobspac_20_15" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td align="left" valign="top">
-                      <table class="devicewidth" align="center" width="500" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td align="center" valign="top">
-                            <table class="devicewidth" align="center" role="presentation" width="500"  border="0" cellpadding="0" cellspacing="0">
-                              <tr>
-                                <td  align="center"  valign="top"  >
-                                  <img class="map" width="500" height="317" alt="Sidecar Dog Tour 2022" src="http://www.sidecardog.com/img/ballparks.png"  style="border: none; outline: none; text-decoration: none; display: block;" />
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="mobspac_20_15" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!-- /MAP -->
-
-                <!-- RED-WHITE DIVIDER -->
-                <table width="600" cellpadding="0" cellspacing="0" role="presentation" border="0" align="center" class="devicewidth">
-                  <tr>
-                    <td class="redstripe" bgcolor="#D24152" height="4" width="100%" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="whitestripe" height="4" bgcolor="#FFFFFF" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="redstripe" height="4" bgcolor="#D24152" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                </table>
-                <!-- /RED-WHITE DIVIDER --> 
-
-                <!-- TWO COLUMN POSITION-SWITCH -->
-                <table class="devicewidth" width="600" role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto;">
-                  <tr>
-                    <td align="center" valign="top">
-
-                      <!-- /TWO COLUMN CONTENT NY -->
-                      <table class="devicewidth" width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0">
-
-                        <tr>
-                          <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                          <!-- gutterleft -->
-                          <td width="20" class="gutterleft" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
-                          </td>
-                          <td align="left" valign="top">
-                            <table class="devicewidthinner" width="560" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                            <!-- Spacing - Top -->
-                            <tr>
-                              <td class="mobspac_20_15" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                            </tr>
-                            <!-- Spacing -->
-                              <tr>
-                                <td dir="rtl" bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%">
-                                  <!--[if mso]>
-                                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
-                                    <tr>
-                                      <td align="center" valign="top" width="560">
-                                  <![endif]-->
-                                  <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width:560px;">
-                                    <tr>
-                                      <td align="center" valign="top" style="font-size:0; padding: 0;">
-                                        <!--[if mso]>
-                                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
-                                          <tr>
-                                            <td align="left" valign="top" width="280">
-                                        <![endif]-->
-                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
-                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td dir="ltr">
-                                                <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" align="right">
-                                                  <tr>
-                                                    <td align="center" valign="top">
-                                                      <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" class="" align="right">
-                                                        <tr>
-                                                          <td align="center" valign="top" style="">
-                                                            <img class="rtl-img" width="280" height="186" src="http://www.sidecardog.com/img/bo-timessquare-500X333.png" alt="Sidecar Dog Tour 2022" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none;" border="0"  />
-                                                          </td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                      </table>
-                                                    </td>
-
-                                                  </tr>
-                                                  <!-- Spacing -->
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                        <!--[if mso]>
-                                        </td>
-                                        <td align="left" valign="top" width="280">
-                                        <![endif]-->
-                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
-                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td style="font-size: 36px; color:#000000;" dir="ltr"> <!-- Don't forget to switch dir to ltr here, or else text runs in reverse -->
-                                                <table align="left" width="260" role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                                  <!-- Spacing -->
-                                                  <tr>
-                                                    <td class="spacing20" height="0" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                  </tr>
-                                                  <!-- Spacing -->
-                                                  <tr>
-                                                    <td align="left" valign="top">
-                                                      
-                                                      <table class="devicewidthinner" width="260" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                                        <tr>
-                                                          <td class="pos-switch-heading" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight:bold; color:#D24152; line-height: 21px; text-align:left;">
-                                                            New York, NY
-                                                          </td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->   
-                                                        <!-- Title Underscore -->
-                                                        <tr>
-                                                          <td align="left" valign="top">
-                                                            <table align="left" width="143" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                                              <tr>
-                                                                <td height="2" align="left" width="100%" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; background: #e1e1e1; ">&nbsp;
-                                                                </td>
-                                                              </tr>
-                                                            </table>
-                                                          </td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->                                
-                                                        <tr>
-                                                          <td class="body_19_17" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style:normal; font-weight:normal; color:#6b6b6b; line-height: 21px; text-align: left; ">
-                                                            The <span class="pop-blue">Sidecar Dog Tour 2022</span> kicks off at the Center of the Known Universe, Times Square, New York City on Home Opening Day, 2022. From there, we ride to Yankee Stadium for peanuts and Cracker Jack!
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                      </table>
-                                                    </td>
-                                                  </tr>
-
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                        <!--[if mso]>
-                                        </td>
-                                        </tr>
-                                        </table>
-                                        <![endif]-->
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <!--[if mso]>
-                                  </td>
-                                  </tr>
-                                  </table>
-                                  <![endif]-->
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- gutterright -->
-                          <td width="20" class="gutterright" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
-                          </td>
-                        </tr>
-                      </table>
-                      <!-- /TWO COLUMN CONTENT NY -->
-
-                      <!-- TWO COLUMN CONTENT LA -->
-                      <table class="devicewidth" width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                          <!-- gutterleft -->
-                          <td width="20" class="gutterleft" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-
-                          <td align="left" valign="top">
-
-                            <table class="devicewidthinner" width="560" align="left" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td dir="rtl" bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%">
-                                  <!--[if mso]>
-                                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
-                                    <tr>
-                                      <td align="center" valign="top" width="560">
-                                  <![endif]-->
-                                  <table align="center" width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width:560px;">
-                                    <tr>
-                                      <td align="center" valign="top" style="font-size:0; padding: 0;">
-                                        <!--[if mso]>
-                                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
-                                          <tr>
-                                            <td align="left" valign="top" width="280">
-                                        <![endif]-->
-                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
-                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td dir="ltr">
-                                                <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" align="right">
-                                                  <tr>
-                                                    <td align="center" valign="top">
-                                                      <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" class="" align="center">
-                                                        <tr>
-                                                          <td align="center" valign="top" style="padding-left: 0;">
-                                                            <img class="rtl-img" src="http://www.sidecardog.com/img/bo-jupiter-500X333.png" width="280" height="186" alt="Sidecar Dog Tour 2022" style="display: block; width: 280px; height: 186px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none;" border="0">
-                                                          </td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                      </table>
-                                                    </td>
-
-                                                  </tr>
-                                                  <!-- Spacing -->
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                        <!--[if mso]>
-                                        </td>
-                                        <td align="left" valign="top" width="280">
-                                        <![endif]-->
-                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top ">
-                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td style="font-size: 36px; color:#000000;" dir="ltr"> <!-- Don't forget to switch dir to ltr here, or else text runs in reverse -->
-                                                <table align="left" width="260" role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                                  <!-- Spacing -->
-                                                  <tr>
-                                                    <td class="spacing20" height="0" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                  </tr>
-                                                  <!-- Spacing -->
-                                                  <tr>
-                                                    <td align="left" valign="top">
-                                                      
-                                                      <table class="devicewidthinner" width="260" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                                        <tr>
-                                                          <td class="pos-switch-heading" align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight:bold; color:#D24152; line-height: 21px; text-align:left;">
-                                                            Los Angeles, CA
-                                                          </td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->   
-                                                         <!-- Title Underscore -->
-                                                         <tr>
-                                                          <td align="left" valign="top">
-                                                            <table align="left" width="175" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                                              <tr>
-                                                                <td height="2" align="left" width="100%" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; background: #e1e1e1; ">&nbsp;
-                                                                </td>
-                                                              </tr>
-                                                            </table>
-                                                          </td>
-                                                        </tr>
-
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->                                
-                                                        <tr>
-                                                          <td class="body_19_17" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style:normal; font-weight:normal; color:#6b6b6b; line-height: 21px; text-align: left; ">
-                                                            The <span class="pop-blue">Sidecar Dog Tour 2022</span> wraps up after the final L.A. home game at Dodger Stadium. Then we head to the nearest dog-friendly beach for some Frisbee, fun and well-deserved treats!
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                      </table>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                        <!--[if mso]>
-                                        </td>
-                                        </tr>
-                                        </table>
-                                        <![endif]-->
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <!--[if mso]>
-                                  </td>
-                                  </tr>
-                                  </table>
-                                  <![endif]-->
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- gutterright -->
-                          <td width="20" class="gutterright" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
-                          </td>
-                        </tr>
-                      </table>
-                      <!-- /TWO COLUMN CONTENT LA -->
-                    </td>
-                  </tr>
-                </table>
-                <!-- TWO COLUMN POSITION-SWITCH -->
-
-
-                <!-- COME ALONG CONTENT -->
-                <table class="devicewidth" bgcolor="#959595" width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0">
-                  <!-- Spacing -->
-                  <tr>
-                    <td class="mobspac_20_10" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <!-- Spacing -->
-                  <tr>
-                    <td align="left" valign="top">
-                      <!-- COME ALONG TOP CONTENT -->
-                      <table class="devicewidthinner" bgcolor="#FFFFFF" align="center" width="560" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="mobspac_15_10" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; ">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td align="left" valign="top">
-                            <table class="devicewidthinner" align="left" width="210" role="presentation" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
-                              <!-- Spacing -->
-                              <tr>
-                                <td class="mobspac_07_04" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                              </tr>
-                              <!-- Spacing -->
-                              <tr>
-                                <td class="heading_32_22" align="center" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 32px; color: #314F6E; font-weight: bold; text-align: center; mso-line-height-rule: exactly; line-height: 36px; text-transform: uppercase">
-                                  Come Along
-                                </td>
-                              </tr>
-                            </table>
-
-                            <table class="devicewidthinner" align="left" width="120"  role="presentation" border="0" cellpadding="0" cellspacing="0">
-                              <!-- Spacing -->
-                              <tr>
-                                <td class="mobspac_07_04" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                              </tr>
-                              <!-- Spacing -->
-                              <tr>
-                                <td align="center"  valign="top"  >
-                                  <img class="rig-icon" width="120" src="http://www.sidecardog.com/img/rig-icon.png" alt="Sidecar Dog Tour 2022" style="width: 120px; height: auto; border: none; outline: none; text-decoration: none; display: block;"  />
-                                </td>
-                              </tr>
-                            </table>
-
-                            <table class="devicewidthinner" align="right" width="210" role="presentation" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
-                              <!-- Spacing -->
-                              <tr>
-                                <td class="mobspac_07_04" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                              </tr>
-                              <!-- Spacing -->
-                              <tr>
-                                <td class="heading_32_22" align="center" valign="top" style="font-family: Arial, Helvetica, Arial, sans-serif; font-size: 32px; color: #314F6E; font-weight: bold; text-align: center; mso-line-height-rule: exactly; line-height: 36px; text-transform: uppercase">
-                                  For The Ride!
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="mobspac_25_20" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td align="left" valign="top">
-                            <table class="comealongrule" width="466" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                              <!-- Spacing -->
-                              <tr>
-                                <td height="1" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; background: #959595">&nbsp;</td>
-                              </tr>
-                              <!-- Spacing -->
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-
-                      <!-- THREE ICONS -->
-                      <table class="devicewidthinner" width="560" role="presentation" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="mobspac_07_04" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td align="left" valign="top">
-
-                            <table class="devicewidthinner" width="560" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td align="left" valign="top">
-
-                                  <!-- 3 COLUMNS -->
-                                  <table width="560" class="devicewidthinner" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                    <tr>
-                                      <td align="center" valign="top">
-                                        <table class="col-3" width="185" align="left" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="mobspac_15_10" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="heading_32_22" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
-                                              Songs!
-                                            </td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="mobspac_00_00" height="7" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td align="center" valign="top">
-                                              <img class="media-icon"  height="81" width="160" src="http://www.sidecardog.com/img/icon-music.png" alt="Sidecar Dog Tour 2022" border="0" style="width: 160px; height: 81px; border: none; outline: none; text-decoration: none; display: block;"  />
-                                            </td>
-                                          </tr>
-                                        </table>
-
-                                        <table class="col-3" width="185" align="left" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="mobspac_15_10" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="heading_32_22" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
-                                              Pix!
-                                            </td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="mobspac_00_00" height="9" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td align="center"  valign="top"  >
-                                              <img class="media-icon"  width="160" height="81" src="http://www.sidecardog.com/img/icon-photo.png" border="0" style="width: 160px; height: 81px; border: none; outline: none; text-decoration: none; display: block;"  />
-                                            </td>
-                                          </tr>
-                                        </table>
-    
-                                        <table class="col-3" class="devicewidthinner" align="left" width="185"  role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="mobspac_15_10" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="heading_32_22" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 24px; font-style: normal; font-weight: bold; color: #959595; line-height: 23px; text-align: center;">
-                                              Videos!
-                                            </td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td class="mobspac_00_00" height="7" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                          </tr>
-                                          <!-- Spacing -->
-                                          <tr>
-                                            <td align="center"  valign="top"  >
-    
-                                              <img class="media-icon" src="http://www.sidecardog.com/img/icon-video.png" width="160" height="81" alt="Sidecar Dog Tour 2022" style="display: block; width: 160px; height: 81px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none;border: none; outline: none; " border="0">
-                                            </td>
-                                          </tr>
-                                        </table>
-
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                              <!-- Spacing -->
-                              <tr>
-                                <td height="29" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                              </tr>
-                              <!-- Spacing -->
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <!-- /THREE ICONS -->
-
-                    </td>
-                  </tr>
-                  <!-- Spacing -->
-                  <tr>
-                    <td class="mobspac_20_10" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <!-- Spacing -->
-                </table>
-                <!-- /COME ALONG CONTENT -->
-
-                <!-- QUESTIONS CONTENT -->
-                <table class="devicewidth" width="600" role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto;">
-                  <tr>
-                    <td align="center" valign="top">
-                      <!-- HEADING -->
-                      <table class="devicewidthinner" role="presentation" width="560" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="mobspac_25_20" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="questionsheader" align="center" valign="top" style="font-family: Arial, sans-serif; font-size: 26px; font-style: normal; font-weight: bold; color: #D24152; line-height: 23px; text-align: center;">
-                            QUESTIONS?
-                          </td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td class="mobspac_20_15" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <!-- Title Underscore -->
-                        <tr>
-                          <td align="center" valign="top">
-                            <table class="headingunderscore" align="center" width="175" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td height="2" align="left" width="100%" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; background: #e1e1e1; ">&nbsp;
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-
-                      <!-- QUESTIONS CONTENT TOP -->
-                      <table class="devicewidth" width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0">
-
-                        <tr>
-                          <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                          <!-- gutterleft -->
-                          <td width="20" class="gutterleft" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
-                          </td>
-                          <td align="left" valign="top">
-                            <table class="devicewidthinner" width="560" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                            <!-- Spacing - Top -->
-                            <tr>
-                              <td class="mobspac_15_10" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                            </tr>
-                            <!-- Spacing -->
-                              <tr>
-                                <td dir="ltr" bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%">
-                                  <!--[if mso]>
-                                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
-                                    <tr>
-                                      <td align="center" valign="top" width="560">
-                                  <![endif]-->
-                                  <table class="devicewidthinner" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width:560px;">
-                                    <tr>
-                                      <td align="center" valign="top" style="font-size:0; padding: 0;">
-                                        <!--[if mso]>
-                                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
-                                          <tr>
-                                            <td align="left" valign="top" width="280">
-                                        <![endif]-->
-                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
-                                          <table class="devicewidthinner" width="280" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td dir="ltr">
-                                                <table class="devicewidthinner" width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" >
-                                                  <tr>
-                                                    <td align="center" valign="top">
-                                                      <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-                                                        <tr>
-                                                          <td class="body_19_17" align="center" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
-                                                            Our trained specialists are available 24/7 to answer your questions.
-                                                          </td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td class="mobspac_15_10" height="0" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                      </table>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                        <!--[if mso]>
-                                        </td>
-                                        <td align="left" valign="top" width="280">
-                                        <![endif]-->
-                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
-                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td style="font-size: 36px; color:#000000;" dir="ltr"> <!-- Don't forget to switch dir to ltr here, or else text runs in reverse -->
-                                                <table class="devicewidthinner" align="center" width="260" role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                                  <!-- Spacing -->
-                                                  <tr>
-                                                    <td class="mobspac_00_00" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                  </tr>
-                                                  <!-- Spacing -->
-                                                  <tr>
-                                                    <td valign="bottom" align="center">
-                                                      <a href="#"><img class="info-icon" src="img/info-icon.png" style="display: block; width: 120px; height: 72px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="120" height="72" border="0"></a>
-                                                    </td>
-                                                  </tr>
-
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                        <!--[if mso]>
-                                        </td>
-                                        </tr>
-                                        </table>
-                                        <![endif]-->
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <!--[if mso]>
-                                  </td>
-                                  </tr>
-                                  </table>
-                                  <![endif]-->
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- gutterright -->
-                          <td width="20" class="gutterright" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
-                          </td>
-                        </tr>
-                      </table>
-                      <!-- /QUESTIONS CONTENT TOP -->
-
-                      <!-- QUESTIONS CONTENT BOTTOM -->
-                      <table class="devicewidth" width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                          <!-- gutterleft -->
-                          <td width="20" class="gutterleft" style=font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-
-                          <td align="left" valign="top">
-
-                              <table class="devicewidthinner" width="560" align="left" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td dir="rtl" bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%">
-                                  <!--[if mso]>
-                                  <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
-                                    <tr>
-                                      <td align="center" valign="top" width="560">
-                                  <![endif]-->
-                                  <table align="center" width="100%" role="presentation" border="0" cellpadding="0" cellspacing="0" style="max-width:560px;">
-                                    <tr>
-                                      <td align="center" valign="top" style="font-size:0; padding: 0;">
-                                        <!--[if mso]>
-                                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="560">
-                                          <tr>
-                                            <td align="left" valign="top" width="280">
-                                        <![endif]-->
-                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top;">
-                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td dir="ltr">
-                                                <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" align="right">
-                                                  <tr>
-                                                    <td align="center" valign="top">
-                                                      <table class="devicewidthinner" width="280" role="presentation" border="0" cellspacing="0" cellpadding="0" class="" align="center">
-                                                        <tr>
-                                                          <a hrefk0="#"><img class="email" src="http://www.sidecardog.com/img/email-round.png" style="display: block; width: 240px; height: 240px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="240" height="240" border="0"></a>
-                                                        </tr>
-                                                      </table>
-                                                    </td>
-
-                                                  </tr>
-                                                  <!-- Spacing -->
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                        <!--[if mso]>
-                                        </td>
-                                        <td align="left" valign="top" width="280">
-                                        <![endif]-->
-                                        <div class="pos-switch" style="display:inline-block; margin: 0 -2px; max-width:50%; min-width:280px; vertical-align:top ">
-                                          <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td style="font-size: 36px; color:#000000;" dir="ltr"> <!-- Don't forget to switch dir to ltr here, or else text runs in reverse -->
-                                                <table align="left" width="260" role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                                  <tr>
-                                                    <td align="left" valign="top">
-                                                      
-                                                      <table class="devicewidthinner" width="260" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td class="mobspac_15_10" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-
-                                                        <tr>
-                                                          <td class="body_19_17" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
-                                                            Visit us at <a href="http://www.sidecardog.com" style="color: #D24152; text-decoration: underline">sidecardog.com</a> for up-to-date info about when the <span class="pop-blue">sidecar&nbsp;dog tour&nbsp;2020</span> will be rolling through your town!
-                                                        </tr>
-                                                        <tr>
-                                                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- Spacing -->
-                                                        <tr>
-                                                          <td class="body_19_17" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; color: #6b6b6b; line-height: 23px; text-align: left;">
-                                                            Or, email us at <a href="mailto:info@sidecardog.com" style="color: #D24152; text-decoration: underline">info@sidecardog.com</a> for more information.
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                      <table role="presentation" width="180" cellspacing="0" cellpadding="0" border="0" align="center">
-                                                        <tr>
-                                                          <td align="center" valign="middle">
-                                                            <div><!--[if mso]>
-                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:180px;" arcsize="25%" strokecolor="#FFFFFF" fillcolor="#D44053">
-                                                                <w:anchorlock/>
-                                                                <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Email us!</center>
-                                                              </v:roundrect>
-                                                            <![endif]--><a href="http://"
-                                                            style="background-color:#D44053;border:1px solid #FFFFFF;border-radius:10px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:180px;-webkit-text-size-adjust:none;mso-hide:all;">Email us!</a></div>
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                        <!--[if mso]>
-                                        </td>
-                                        </tr>
-                                        </table>
-                                        <![endif]-->
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <!--[if mso]>
-                                  </td>
-                                  </tr>
-                                  </table>
-                                  <![endif]-->
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <!-- gutterright -->
-                          <td width="20" class="gutterright" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;
-                          </td>
-                        </tr>
-                      </table>
-                      <!-- /QUESTIONS CONTENT BOTTOM -->
-
-
-                    </td>
-                  </tr>
-                  <!-- Spacing -->
-                  <tr>
-                    <td height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <!-- Spacing -->
-                </table>
-                <!-- /QUESTIONS CONTENT -->
-
-                <!-- END MATTER -->
-                <table class="devicewidth" bgcolor="#383838"  width="600" align="center" role="presentation" border="0" cellpadding="0" cellspacing="0">
-                  <!-- Spacing -->
-                  <tr>
-                    <td class="mobspac_25_20" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                  </tr>
-                  <!-- Spacing -->
-                  <tr>
-
-                    <td align="left" valign="top">
-                      <table width="560" class="devicewidthinner" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 18px; text-align: left;">
-                            &copy;2020 Van Albert and SIDECARDOG.COM. All rights reserved.
-                          </td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 19px; text-align: left;">
-                            All text and graphics on this website and the associated email were created by Van Albert and are provided exclusively for educational purposes. The images, icons and text displayed on this website and contained in the sample email are property of Van Albert and SIDECARDOG.COM. 
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 18px; text-align: left;">
-                          </td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td align="left" valign="top">
-
-                            <table width="560" class="devicewidthinner" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td align="left" valign="top">
-                                  <table class="devicewidthinner" width="80" align="left" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                    <!-- Spacing -->
-                                    <tr>
-                                      <td height="2" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                                    </tr>
-                                    <!-- Spacing -->
-                                    <tr>
-                                      <td align="center" valign="top" style="padding-bottom: 5px">
-                                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
-                                      </td>
-                                    </tr>
-                                  </table>
-
-                                  <table class="devicewidthinner" width="440" align="right" role="presentation" border="0" cellspacing="0" cellpadding="0">
-                                    <tr>
-                                      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 18px; text-align: left;">
-                                        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color: #e1e1e1; text-decoration: underline;">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-                                      </td>
-
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 19px; text-align: left;">
-                            This content is provided as an HTML email example for educational purposes and may be freely downloaded for non-commerical use. Users are free to adapt and recycle sections of HTML code including the header, CSS styling and individual HTML elements and attributes without restriction. All images and all text relating to the 'Sidecar Dog Tour 2022' are provided under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license (see above) and may be shared exclusively for informational and non-commercial purposes. Display or online publication of this content on third party websites or tutorials without the written consent of the copyright holder is prohibited. Sharing of adaptations of the images or other content or commercial usage thereof is prohibited.
-                          </td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                        <tr>
-                          <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 23px; text-align: center; text-transform: uppercase">
-                            happy coding!
-                          </td>
-                        </tr>
-
-                        <!-- Spacing -->
-                        <tr>
-                          <td height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
-                        </tr>
-                        <!-- Spacing -->
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-                <!-- END MATTER -->
-
-
-
-              </td>
-            </tr>
-          </table>
           <!-- /CONTENT WRAPPER -->
-
-
-
-
-          
-
         </td>
       </tr>
     </table>

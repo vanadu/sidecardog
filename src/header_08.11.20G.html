@@ -1,28 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-  <title>Template - Sidecar Dog Tour 2022</title>
+  <title>Sidecar Dog Tour 2022</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Cerberus: Use the latest (edge) version of IE rendering engine -->
   <meta name="x-apple-disable-message-reformatting">  <!-- Cerberus: Disable auto-scale in iOS 10 Mail entirely -->
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Cerberus: Tell iOS not to automatically link certain text strings. -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"><!-- VA! Use Roboto -->
   <title></title> <!-- Cerbrerus: The title tag shows in email notifications, like Android 4.4. -->
-  <!-- Outlook-specific fallback font instruction.  -->
-  <!--[if mso]>
-  <style type="text/css">
-  body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
-  </style>
-  <![endif]-->
-  <!-- Ensure PNGs don't scale at 120dpi display in Outlook on Windows -->
-<!--[if gte mso 9]>
-<xml>
-    <o:OfficeDocumentSettings>
+  <!-- VA! Below is needed to ensure PNGs don't scale at 120dpi display in Outlook on Windows -->
+  <!--[if gte mso 7]><xml>
+  <o:OfficeDocumentSettings>
     <o:AllowPNG/>
     <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-</xml>
-<![endif]-->
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <!-- Ensure Outlook falls back to the proper font instead of defaulting to Times Roman. Include class="fallback-font" in wherever you use a web font -->
+  <!--[if mso]>
+  <style type=”text/css”>
+  .fallback-font {
+  font-family: Arial, sans-serif;
+  }
+  </style>
+  <![endif]-->
 
   <style type="text/css">
     body {
@@ -73,10 +73,6 @@
         max-height: none !important;
         line-height: normal !important;
       }
-      /* !VA Can';t
-      /* *.tbloutlook1 {
-        width:100% !important;
-      } */
       *.tbloutlook2 {
         width:100% !important;
       }
@@ -126,55 +122,52 @@
     table.full { width: 100%; clear: both; }
 
     /*DEV STYLES*/
-    /* !VA Uncomment this to make TD gutters visible for dev */
-     /* .gutterleft, .gutterright { border: 1px solid red !important;} */ */
     .dvgrn {border: 1px solid green }
     .dvred {border: 1px solid red}
     .dvblu {border: 1px solid blue }
 
-    /* LITMUS Styles */
-    .img-fluid {
-      max-width: 100% !important;
-      width: 100% !important;
-      height: auto !important;
-    }
-
-    .responsive-table {
-        width: 100% !important;
-    }
-
-    .wrapper {
-        width: 100% !important;
+      /* LITMUS Style */
+      .img-fluid {
         max-width: 100% !important;
-    }
-    /* End LITMUS Style */
+        width: 100% !important;
+        height: auto !important;
+      }
 
-    /* GLOBAL Styles */
-    span.pop-red { color: #D24152 !important; font-weight: 700 !important; text-transform: uppercase !important; }
-    span.pop-blue { color: #314F6E !important; font-weight: 700 !important; text-transform: uppercase !important; } 
+      .responsive-table {
+          width: 100% !important;
+      }
 
-    /* Moving this out of media queries because it might break Gmail or Yahoo mail */
-    a[href^="tel"], a[href^="sms"] { color: #0a8cce; /* or whatever your want */ pointer-events: none; cursor: default; }
+      .wrapper {
+          width: 100% !important;
+        	max-width: 100% !important;
+      }
+      /* End LITMUS Style */
+      /* Start GLOBAL Styles */
+      /* Moved these out of media queries because not sure if Gmail chokes on them and thus strips out the entire media query */
+      a[href^="tel"], a[href^="sms"] { color: #0a8cce; /* or whatever your want */ pointer-events: none; cursor: default; }
+      .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0a8cce !important; pointer-events: auto; cursor: default; }
 
-    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0a8cce !important; pointer-events: auto; cursor: default; }
+      .devicewidth { width: 600px !important;}
+      /* Default large phone inner device width: */
+      .devicewidthinner { width: 560px !important;}
 
     /* Large Phone Styles - Targeting iPhone 11, XR, 6 Plus, 6S Plus, 7 Plus, 8 Plus i.e. 414px logical resolution to 599px */
     @media only screen and (max-width:599px) {
 
       /* ----- Template -------*/
-
       /* Default large phone device width: */
-      .devicewidth { width: 412px !important; align: center !important; }
+      .devicewidth { width: 412px !important;}
       /* Default large phone inner device width: */
       .devicewidthinner { width: 372px !important;}
       /* The .mobileshow class ensures that the mobile image swap image displays at the default Large Phones width of 414px. */
       img.mobileshow { width: 412px !important; height: auto !important; }
+      /* Large Phone Vertical Spacing */
       td.mobspac_00_00 { height: 0 !important; }
       td.mobspac_04_02 { height: 4px !important;}
       td.mobspac_07_04 { height: 7px !important; }
       td.mobspac_10_05 { height:10px !important; }
-      td.mobspac_12_07 { height:12px !important; }
       td.mobspac_10_07 { height:10px !important; }
+      td.mobspac_12_07 { height:12px !important; }
       td.mobspac_15_10 { height:15px !important; }
       td.mobspac_20_10 { height:20px !important; }
       td.mobspac_20_15 { height:20px !important; }
@@ -206,39 +199,17 @@
       .headerstripe_w { width: 60px !important; }
       table.headerstripes { width: 60px !important; height: 18px !important; }
       table.headerheadline_w { width: 292px !important; }
-      /* SUBHEAD */
-      img.baseball { width: 25px !important; height: 25px !important; }
-      /* DOGVENTURE */
-      img.img-gif { width: 280px !important; height: 186px !important; }
-      td.map-bg { width: auto !important; height: 420px !important;}
-      /* ITSA */ 
-      img.sidecar { width: 260px !important; height: 300px !important; }
-      /* BIG APPLE */
-      img.map { width: 360px !important; height: 228px !important; }
-      /* NY-LA */
-      div.pos-switch { max-width: 100% !important;}
-      img.rtl-img {width: 371px !important; height: 247px !important;}
-      /* COME ALONG  */
-      table.col-3 { width: 100% !important; align: center !important }
-      img.rig-icon { width: 160px !important; height: 96px !important; }
-      table.comealongrule { width: 75% !important; }
-      /* QUESTIONS */
-      div.pos-switch { width: 100% !important; max-width: 100% !important; }
-      img.info-icon { width: 100px !important; height: 60px !important; }
-      img.email { width: 220px !important; height: 220px !important; }
 
     }
 
       /* Small Phone Styles - Targeting most Samsung and smaller iPhone devices, i.e. smallest devices up to 413px logical resolution */
       @media only screen and (max-width:411px) {
-      /* !VA Phone number, mobile link styling */
-      a[href^="tel"], a[href^="sms"] { text-decoration: none; color: #0a8cce; pointer-events: none; cursor: default; }
-      /* !VA Phone number, mobile link styling */
-      .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #0a8cce !important; pointer-events: auto; cursor: default; }
 
       /* VA! Small Phone Styles */
       /* Default small phone device width: */
-      table.devicewidth { width: 318px !important; align: center !important; text-align: center !important;}
+      /* VA! Removing the align: center property because not sure if Gmail chokes on it */
+      /* table.devicewidth { width: 318px !important; align: center !important; text-align: center !important;} */
+      table.devicewidth { width: 318px !important; }
       /* Default small Phone inner device width: */
       table.devicewidthinner { width: 298px !important; }
 
@@ -276,27 +247,6 @@
       .headerstripe_w { width: 40px !important; }
       .headerstripe_h { height: 15px !important; }
       table.headerheadline_w { width: 238px !important; }
-      /* SUBHEAD */
-      img.baseball { width: 20px !important; height: 20px !important; }
-      td.subheadspacing { height: 3px !important; }
-      /* DOGVENTURE */
-      img.img-gif { width: 220px !important; height: 146px !important; }
-      td.map-bg { width: 507px !important; height: 330px !important;}
-      /* ITSA */ 
-      img.sidecar { width: 220px !important; height: 254px !important; }
-      /* BIG APPLE */
-      img.map { width: 280px !important; height: auto !important }
-      /* NY-LA */
-      div.pos-switch { max-width: 100% !important;}
-      img.rtl-img {width: 300px !important; height: 200px !important;}
-      /* COME ALONG */
-      img.rig-icon { width: 120px !important; height: 72px !important; }
-      img.shrink50 { width: 152px !important; height: 77px !important }
-      img.media-icon { width: 150px !important; height: 76px !important }
-      /* QUESTIONS */
-      table.headingunderscore { width: 130px !important;}
-      img.info-icon { width: 100px !important; height: 60px !important; }
-      img.email { width: 200px !important; height: 200px !important; }
 
     }
   </style>
@@ -319,30 +269,125 @@
 
   <body>
     <!-- VA! Changed min-width to 602px to accomodate l/r border -->
-    <!-- VA! I don't know what's right anymore - it was tested with min-width: 600px -->
-    <table class="fullgmail header-bg" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border: 0; min-width: 600px;">
+    <table class="fullgmail" width="100%" bgcolor="#FFFFFF" role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="border: 0; min-width: 600px;">
       <tr>
         <td align="center" valign="top" style="width: 600px;">
+          
           <!-- CONTENT WRAPPER -->
+          <table width="600" class="devicewidth" align="center" bgcolor="#FFFFFF" border="0" role="presentation" cellpadding="0" cellspacing="0" style="width: 600px;">
+            <tr>
+              <td align="center" valign="top" style="border-left: 1px solid #959595; border-right: 1px solid #959595; width: 600px;">
 
-                <!-- HERO WRAPPER-->
-                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+
+                <!-- HEADER WRAPPER-->
+                <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 600px;">
                   <tr>
-                    <td valign="top" align="left">
-                      <a href="#"><img class="hide" alt="" width="600" height="237" src="http://www.sidecardog.com/img/bo-ben.png" border="0" style="width: 600px; height: 237px; margin: 0; border: none; outline: none; text-decoration: none; display: block; "></a>
-                      <!-- VA! MS Conditional Block for Mobile Image -->
-                      <!--[if !mso]><!-->
-                      <span style="width:0; overflow:hidden; float:left; display:none; max-height:0; line-height:0;" class="mobileshow">
-                      <a href="#"><img class="mobileshow" alt="" width="318" height="199" src="http://www.sidecardog.com/img/bo-ben_mob.png" border="0" style="width: 318px; height: 199px; margin: 0; border: none; outline: none; text-decoration: none; display: block;" /></a>
-                      <!--</span>-->
-                      <!--<![endif]-->
+                    <td class="devicewidth" valign="top" align="left" style="width: 600px;">
+                      <!-- HEADER STARS TOP -->
+                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 600px;">
+                        <tr>
+                          <td class="devicewidth" valign="top" align="left" style="background-color: #314F6E; width: 600px;">
+                            <a href="#"><img class="headerstars" src="http://www.sidecardog.com/img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0"></a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- HEADER CONTENT PARENT-->
+                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center"  style="width: 600px; ">
+                        <tr>
+                          <!-- Left Stripes-->
+                          <td width="90" class="headerstripe_w" valign="middle" align="left" style="width: 90px">
+                            <!-- Stripes -->
+                            <table width="90" class="headerstripe_w" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 90px; ">
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#D24152" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#FFFFFF" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px;">
+                              </td>
+                              </tr>
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#D24152" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px; ">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#FFFFFF" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px; ">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#D24152" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px;">
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- Header Headline -->
+                          <td align="left" valign="top">
+                            <table class="headerheadline_w" role="presentation" width="414" cellspacing="0" cellpadding="0" border="0" align="left" style="width: 414px;">
+                              <tr>
+                                <td valign="top" align="left">
+                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="right" style="">
+                                    <!-- Spacing -->
+                                    <tr>
+                                      <td height="8" class="mobspac_10_07" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; ">&nbsp;</td>
+                                    </tr>
+                                    <!-- Spacing -->
+                                    <tr>
+                                      <td class="fallback-font heading_36_30" valign="top" align="left" style="font-family: 'Roboto', 'Arial Black', Gadget, sans-serif; font-size: 36px; color: #222222; font-weight: 900; mso-line-height-rule: exactly; line-height: 38px; text-transform: uppercase; text-align: center; padding:  0; margin: 0; width: 414px;">sidecar dog tour&nbsp;2022
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- Right Stripes-->
+                          <td width="90" class="headerstripe_w" valign="middle" align="left" style="width: 90px">
+                            <!-- Stripes -->
+                            <table width="90" class="headerstripe_w" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 90px; ">
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#D24152" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#FFFFFF" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px;">
+                              </td>
+                              </tr>
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#D24152" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#FFFFFF" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="18" class="headerstripe_h" width="100%" valign="middle" align="center" bgcolor="#D24152" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly; height: 18px;">
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- HEADER STARS BOTTOM -->
+                      <table class="devicewidth" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center" style="width: 600px;">
+                        <tr>
+                          <td class="devicewidth" valign="top" align="left" style="background-color: #314F6E; width: 600px;">
+                            <a href="#"><img class="headerstars" src="http://www.sidecardog.com/img/white-star-bar.png" style="display: block; width: 600px; height: 30px; font-family: Arial, sans-serif; font-size: 16px; line-height: 15px; text-decoration: none; border: none; outline: none;" width="600" height="30" border="0"></a>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
+                  
                 </table>
-                <!-- /HERO WRAPPER -->
+                <!-- /HEADER WRAPPER-->
 
-
+              </td>
+            </tr>
+          </table>
           <!-- /CONTENT WRAPPER -->
+          
+
         </td>
       </tr>
     </table>
